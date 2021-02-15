@@ -16,12 +16,7 @@ const Alert = () => {
                   New
                 </span>
                 <span className="alert-text gr-text-9 text-white">
-                  We’ve added a new exciting feature in v3.0.{" "}
-                  <Link href="/#">
-                    <a className="action-link text-white gr-text-underline">
-                      Get it now for $49.
-                    </a>
-                  </Link>
+                  "A business without website is like a ship lost in the horizon"
                 </span>
               </div>
             </Col>

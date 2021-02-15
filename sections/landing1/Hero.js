@@ -17,14 +17,14 @@ const Hero = () => {
             <Col md="9" lg="7" xl="6">
               <div className="text-center">
                 <p className="gr-text-8 gr-text-color font-weight-bold mb-9">
-                  Minimal Interior Design
+                Not just a website!
                 </p>
                 <h1 className="gr-text-2 mb-8">
-                  We minimize your waste in every step of the process.
+                We help you build a selling website.
                 </h1>
                 <Link href="/#">
                   <a className="btn btn-white text-secondary gr-hover-y px-lg-9">
-                    Book my appointment
+                    Reach Us
                   </a>
                 </Link>
               </div>

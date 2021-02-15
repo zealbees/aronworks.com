@@ -17,7 +17,7 @@ import "../assets/fonts/icon-font/css/style.css";
 
 // import "../../node_modules/slick-carousel/slick/slick.css";
 // import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-// import "../../node_modules/aos/dist/aos.css";
+import "../node_modules/aos/dist/aos.css";
 // import "../../node_modules/react-day-picker/lib/style.css";
 
 import "../assets/fonts/icon-font/css/style.css";

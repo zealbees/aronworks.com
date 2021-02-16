@@ -1,10 +1,6 @@
-// import App from 'next/app'
 import Layout from "../components/Layout";
 import { GlobalProvider } from "../context/GlobalContext";
 
-// import "../assets/fonts/fontawesome-5/webfonts/fa-brands-400.ttf";
-// import "../assets/fonts/fontawesome-5/webfonts/fa-regular-400.ttf";
-// import "../assets/fonts/fontawesome-5/webfonts/fa-solid-900.ttf";
 
 // import "../assets/fonts/typography-font/CircularStd-Bold.ttf";
 // import "../assets/fonts/typography-font/CircularStd-BoldItalic.ttf";
@@ -22,7 +18,6 @@ import "../node_modules/aos/dist/aos.css";
 
 import "../assets/fonts/icon-font/css/style.css";
 import "../assets/fonts/typography-font/typo.css";
-import "../assets/fonts/fontawesome-5/css/all.css";
 
 import "../scss/bootstrap.scss";
 import "../scss/main.scss";

@@ -9,7 +9,7 @@ const Content = () => {
       <div className="content-section2 pt-13 pt-lg-17 bg-default-6 overflow-hidden">
         <Container>
           <Row className="align-items-center">
-            <Col lg="5" md="4">
+            <Col lg="4" md="3">
               <div className="content-img mb-lg-n29 mb-md-n13">
                 <Image
                   className="w-100"
@@ -21,8 +21,8 @@ const Content = () => {
               </div>
             </Col>
             <Col
-              lg="6"
-              md="8"
+              lg="7"
+              md="9"
               className="offset-lg-1 mt-9 mt-lg-0 px-xl-11"
               data-aos="fade-left"
               data-aos-duration="700"
@@ -33,8 +33,8 @@ const Content = () => {
                   choose us to grow today.
                 </h2>
                 <p className="gr-text-8 mb-0">
-                  We share common trends and strategies for improving your
-                  rental income and making sure you stay in high demand.
+                  To us, it's not just work. It's the Passion and Energy we put
+                  in to make a Positive difference.
                 </p>
               </div>
               <div className="content-widget mt-9 mb-11 mb-lg-0">
@@ -45,7 +45,7 @@ const Content = () => {
                         <i className="icon icon-check-simple"></i>
                       </div>
                       <h3 className="w-title gr-text-8 font-weight-bold mb-0">
-                        Fully Responsive
+                        Customer Centric
                       </h3>
                     </div>
                   </Col>
@@ -55,7 +55,7 @@ const Content = () => {
                         <i className="icon icon-check-simple"></i>
                       </div>
                       <h3 className="w-title gr-text-8 font-weight-bold mb-0">
-                        Beautiful Layouts
+                        In-House Expertise
                       </h3>
                     </div>
                   </Col>
@@ -65,7 +65,7 @@ const Content = () => {
                         <i className="icon icon-check-simple"></i>
                       </div>
                       <h3 className="w-title gr-text-8 font-weight-bold mb-0">
-                        Easy to Edit
+                        Commitment to Perfection
                       </h3>
                     </div>
                   </Col>
@@ -75,7 +75,7 @@ const Content = () => {
                         <i className="icon icon-check-simple"></i>
                       </div>
                       <h3 className="w-title gr-text-8 font-weight-bold mb-0">
-                        Google Font Included
+                        A 360 Degree Partnership
                       </h3>
                     </div>
                   </Col>

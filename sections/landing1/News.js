@@ -13,8 +13,8 @@ const News = () => (
             <div className="section-title text-center mb-11 mb-lg-18">
               <h2 className="title gr-text-4 mb-6">News that helps</h2>
               <p className="gr-text-8 px-lg-8 mb-0">
-                With lots of unique blocks, you can easily build a page without
-                coding. Build your next landing page.
+                We love connecting to our partners by various means. Sharing our
+                thoughts, and experince is one among them.
               </p>
             </div>
           </div>

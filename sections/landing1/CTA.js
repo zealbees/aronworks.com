@@ -13,11 +13,11 @@ const CTA = () => {
               <div className="text-center dark-mode-texts">
                 <h2 className="gr-text-4 mb-7">Have a project in mind?</h2>
                 <p className="gr-text-9 mb-11 px-xl-7 gr-text-color">
-                  Connect with us to discuss your Ideas and Concept. 
-                  We would be happy to take it further!
+                  Connect with us to discuss your Ideas and Concept. We would be
+                  happy to take it further!
                 </p>
                 <Link href="/#">
-                  <a className="btn btn-white text-secondary gr-hover-y px-lg-9">
+                  <a className="btn btn-yellow-orange text-black gr-hover-y px-lg-9">
                     Reach Us
                   </a>
                 </Link>

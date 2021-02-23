@@ -1,32 +1,61 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useContext } from "react";
 import Link from "next/link";
+import { Container, Row, Col } from "react-bootstrap";
+
+import GlobalContext from "../../context/GlobalContext";
+
+import Image from "next/image";
 
 const Hero = () => {
+  const gContext = useContext(GlobalContext);
+
   return (
     <>
       {/* <!-- Hero Area --> */}
-      <div
-        className="dark-mode-texts pt-30 pb-35 bg-image mt-19 rounded-10 mx-md-6"
-        css={`
-          background-image: url("/assets/images/hero-image.png");
-        `}
-      >
+      <div className="hero-area position-relative bg-default-2 bg-pattern pattern-2 pt-15 pt-lg-29 pb-15 pb-lg-29">
         <Container>
-          <Row className="justify-content-center">
-            <Col md="9" lg="7" xl="6">
-              <div className="text-center">
-                <p className="gr-text-8 gr-text-color font-weight-bold mb-9">
-                Not just a website!
-                </p>
-                <h1 className="gr-text-2 mb-8">
-                We help you build a selling website.
+          <Row className="justify-content-center align-items-center">
+            <Col lg="6" md="9" className="order-lg-2">
+              <div
+                className="hero-img"
+                data-aos="fade-left"
+                data-aos-duration="750"
+                data-aos-delay="500"
+              >
+                <div className="hero-video-thumb position-relative gr-z-index-1">
+                  <Image
+                    className="w-100"
+                    src="/assets/images/hero.svg"
+                    alt=""
+                    width={500}
+                    height={500}
+                  />
+                </div>
+              </div>
+            </Col>
+            <Col
+              lg="6"
+              md="9"
+              className="order-lg-1 mt-9 mt-lg-0"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div className="hero-content">
+                <h1 className="gr-text-2 mb-9">
+                  Get more visitors, <br />
+                  get more sales.
                 </h1>
-                <Link href="/#">
-                  <a className="btn btn-white text-secondary gr-hover-y px-lg-9">
-                    Reach Us
-                  </a>
-                </Link>
+                <p className="gr-text-8 pr-5 pl-0 pr-xl-11 mb-9">
+                  Not just websites. We do selling websites.
+                </p>
+                <div className="hero-btn">
+                  <Link href="/#">
+                    <a className="btn btn-yellow-orange text-black gr-hover-y px-lg-9">
+                      Reach Us
+                    </a>
+                  </Link>
+                </div>
               </div>
             </Col>
           </Row>

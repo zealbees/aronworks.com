@@ -15,8 +15,8 @@ const Testimonials = () => {
                   What people say about us
                 </h2>
                 <p className="gr-text-8 mb-0 px-lg-7 px-xl-0">
-                  With lots of unique blocks, you can easily build a page
-                  without coding. Build your next landing page.
+                  Our Partners words are the positive assurance that we are
+                  heading in the right direction.
                 </p>
               </div>
             </Col>

@@ -41,7 +41,7 @@ const Content = () => {
                 <Row>
                   <Col md="6">
                     <div className="single-widget d-flex align-items-center py-5">
-                      <div className="widget-icon text-secondary mr-6 gr-text-8">
+                      <div className="widget-icon text-primary mr-6 gr-text-8">
                         <i className="icon icon-check-simple"></i>
                       </div>
                       <h3 className="w-title gr-text-8 font-weight-bold mb-0">
@@ -51,7 +51,7 @@ const Content = () => {
                   </Col>
                   <Col md="6">
                     <div className="single-widget d-flex align-items-center py-5">
-                      <div className="widget-icon text-secondary mr-6 gr-text-8">
+                      <div className="widget-icon text-primary mr-6 gr-text-8">
                         <i className="icon icon-check-simple"></i>
                       </div>
                       <h3 className="w-title gr-text-8 font-weight-bold mb-0">
@@ -61,7 +61,7 @@ const Content = () => {
                   </Col>
                   <Col xl="6" md="5">
                     <div className="single-widget d-flex align-items-center py-5">
-                      <div className="widget-icon text-secondary mr-6 gr-text-8">
+                      <div className="widget-icon text-primary mr-6 gr-text-8">
                         <i className="icon icon-check-simple"></i>
                       </div>
                       <h3 className="w-title gr-text-8 font-weight-bold mb-0">
@@ -71,7 +71,7 @@ const Content = () => {
                   </Col>
                   <Col xl="6" md="7">
                     <div className="single-widget d-flex align-items-center py-5">
-                      <div className="widget-icon text-secondary mr-6 gr-text-8">
+                      <div className="widget-icon text-primary mr-6 gr-text-8">
                         <i className="icon icon-check-simple"></i>
                       </div>
                       <h3 className="w-title gr-text-8 font-weight-bold mb-0">

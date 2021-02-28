@@ -6,12 +6,12 @@ const Services = () => {
   return (
     <>
       {/* <!--Service section  -->*/}
-      <div className="service-section bg-default-4 pt-15 pb-13 py-lg-25">
+      <div className="service-section bg-default-2 pt-15 pb-13 py-lg-25">
         <Container>
           <Row className="justify-content-center">
-            <Col md="9" lg="7" xl="6">
+            <Col md="10" lg="8" xl="7">
               <div className="section-title text-center mb-11 mb-lg-19 px-lg-3">
-                <h4 className="pre-title gr-text-12 text-red text-uppercase mb-7">
+                <h4 className="pre-title gr-text-7 text-red mb-7">
                   Our services
                 </h4>
                 <h2 className="title gr-text-4">

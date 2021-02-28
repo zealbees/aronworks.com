@@ -7,7 +7,7 @@ const Pricing = () => {
   return (
     <>
       {/* <!-- Pricing Area --> */}
-      <div className="pricing-section bg-default-5 pt-14 pt-lg-21">
+      <div className="pricing-section bg-default-2 pt-14 pt-lg-21">
         <Container>
           <Row className="justify-content-center">
             <Col xl="6" lg="8" md="10">
@@ -34,9 +34,8 @@ const Pricing = () => {
                   </span>
                   <a
                     href="/#"
-                    className={`btn-toggle mx-3 price-deck-trigger ${
-                      isMonthly ? "" : "active"
-                    }`}
+                    className={`btn-toggle mx-3 price-deck-trigger ${isMonthly ? "" : "active"
+                      }`}
                     onClick={(e) => {
                       e.preventDefault();
                       setIsMonthly(!isMonthly);
@@ -47,7 +46,7 @@ const Pricing = () => {
                   <span className="period year gr-text-8 gr-text-color">
                     Yearly
                   </span>
-                  <span className="badge gr-badge text-primary gr-text-12 gr-bg-blue-opacity-1 rounded-pill ml-5 text-uppercase">
+                  <span className="badge gr-badge text-primary gr-text-12 gr-bg-red-opacity-1 rounded-pill ml-5 text-uppercase">
                     Save 25%
                   </span>
                 </div>

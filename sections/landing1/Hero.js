@@ -1,18 +1,13 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
-
-import GlobalContext from "../../context/GlobalContext";
-
 import Image from "next/image";
 
 const Hero = () => {
-  const gContext = useContext(GlobalContext);
-
   return (
     <>
       {/* <!-- Hero Area --> */}
-      <div className="hero-area position-relative bg-default-2 bg-pattern pattern-2 pt-15 pt-lg-29 pb-15 pb-lg-29">
+      <div className="hero-area position-relative bg-default-6 bg-pattern pattern-4 pt-15 pt-lg-29 pb-15 pb-lg-29">
         <Container>
           <Row className="justify-content-center align-items-center">
             <Col lg="6" md="9" className="order-lg-2">

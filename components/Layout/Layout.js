@@ -47,7 +47,7 @@ const getTheme = (mode) =>
     colors: get(baseTheme.colors.modes, mode, baseTheme.colors),
   });
 
-const Layout = ({ children, pageContext }) => {
+const Layout = ({ children }) => {
   const gContext = useContext(GlobalContext);
 
   const [visibleLoader, setVisibleLoader] = useState(true);
@@ -79,60 +79,30 @@ const Layout = ({ children, pageContext }) => {
     );
   }, [gContext]);
 
-  if (pageContext.layout === "bare") {
-    return (
-      <ThemeProvider
-        theme={
-          gContext.themeDark ? getTheme(modes.dark) : getTheme(modes.light)
-        }
-      >
-        <div data-theme-mode-panel-active data-theme="light">
-          <GlobalStyle />
-          <Head>
-            <title>AronWorks</title>
-            {/* <link rel="icon" type="image/png" href={imgFavicon} /> */}
-          </Head>
-          <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
-            <div className="load-circle">
-              <span className="one"></span>
-            </div>
-          </Loader>
-          <div className="site-wrapper overflow-hidden" ref={eleRef}>
-            {children}
-            <Footer isDark={gContext.footerDark} />
-          </div>
-
-          <ModalVideo />
-        </div>
-      </ThemeProvider>
-    );
-  }
 
   return (
-    <>
-      <ThemeProvider
-        theme={
-          gContext.themeDark ? getTheme(modes.dark) : getTheme(modes.light)
-        }
-      >
-        <div data-theme-mode-panel-active data-theme="light">
-          <GlobalStyle />
-          <Head>
-            <title>AronWorks</title>
-            {/* <link rel="icon" type="image/png" href={imgFavicon} /> */}
-          </Head>
-          <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
-          <div className="site-wrapper overflow-hidden" ref={eleRef}>
-            <Header isDark={gContext.headerDark} />
-            {children}
+    <ThemeProvider
+      theme={
+        gContext.themeDark ? getTheme(modes.dark) : getTheme(modes.light)
+      }
+    >
+      <div data-theme-mode-panel-active data-theme="light">
+        <GlobalStyle />
+        <Head>
+          <title>AronWorks</title>
+          {/* <link rel="icon" type="image/png" href={imgFavicon} /> */}
+        </Head>
+        <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
+        <div className="site-wrapper overflow-hidden" ref={eleRef}>
+          <Header isDark={gContext.headerDark} />
+          {children}
 
-            <Footer isDark={gContext.footerDark} />
-          </div>
-
-          <ModalVideo />
+          <Footer isDark={gContext.footerDark} />
         </div>
-      </ThemeProvider>
-    </>
+
+        <ModalVideo />
+      </div>
+    </ThemeProvider>
   );
 };
 

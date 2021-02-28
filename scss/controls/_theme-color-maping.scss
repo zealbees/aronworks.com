@@ -32,6 +32,7 @@ $theme-colors: map-merge(
     "sky-blue": $sky-blue,
     "yellow": $yellow,
     "yellow-orange": $yellow-orange,
+    "eerie-black": $eerie-black,
     "blackish-blue": $blackish-blue,
     "black": $black,
     "mirage": $mirage,
@@ -46,6 +47,7 @@ $theme-colors: map-merge(
     "gray-310": $gray-310,
     "gray-opacity": $gray-opacity,
     "blackish-blue-opacity": $blackish-blue-opacity,
+    "opacity-eerie-black" : rgba(34, 34 ,34, 0.7),
     "narvik": #edf9f2,
   ),
   $theme-colors

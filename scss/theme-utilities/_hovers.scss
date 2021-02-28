@@ -98,12 +98,12 @@ a {
   }
 }
 
-.gr-hover-text-french-pink {
+.gr-hover-text-red {
   transition: 0.4s;
   &:hover {
-    color: $french-pink !important;
+    color: $red !important;
     i {
-      color: $french-pink !important;
+      color: $red !important;
     }
   }
 }

@@ -26,7 +26,7 @@ const IndexPage = () => {
         <Hero />
         <Services />
         <Content2 />
-        <Alert />
+        {/* <Alert /> */}
         <Pricing />
         <Testimonials />
         <News />

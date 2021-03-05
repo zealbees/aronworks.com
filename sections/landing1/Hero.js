@@ -38,7 +38,8 @@ const Hero = () => {
             >
               <div className="hero-content">
                 <h1 className="gr-text-2 mb-9">
-                  Get more visitors, <br />
+                  Get more <span className="heighlight"> visitors,</span>
+                  <br />
                   get more sales.
                 </h1>
                 <p className="gr-text-8 pr-5 pl-0 pr-xl-11 mb-9">

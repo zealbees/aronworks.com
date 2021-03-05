@@ -1,14 +1,12 @@
-
-
 // Buttons
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 // For each of Bootstrap's buttons, define text, background, and border color.
 
-$btn-padding-y:               $input-btn-padding-y;
-$btn-padding-x:               $input-btn-padding-x;
-$btn-font-size:               $input-btn-font-size;
-$btn-line-height:             $input-btn-line-height;
+$btn-padding-y: $input-btn-padding-y;
+$btn-padding-x: $input-btn-padding-x;
+$btn-font-size: $input-btn-font-size;
+$btn-line-height: $input-btn-line-height;
 //$btn-white-space:             null; // Set to `nowrap` to prevent text wrapping
 
 // $btn-padding-y-sm:            $input-btn-padding-y-sm;
@@ -23,8 +21,7 @@ $btn-line-height:             $input-btn-line-height;
 
 // $btn-border-width:            $input-btn-border-width;
 
-
-$btn-font-weight:             700;
+$btn-font-weight: 500;
 // $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075);
 // $btn-focus-width:             $input-btn-focus-width;
 // $btn-focus-box-shadow:        $input-btn-focus-box-shadow;
@@ -35,11 +32,10 @@ $btn-font-weight:             700;
 
 // $btn-block-spacing-y:         .5rem;
 
-
-$btn-border-radius:           8px;
+$btn-border-radius: 8px;
 // $btn-border-radius-lg:        $border-radius-lg;
 // $btn-border-radius-sm:        $border-radius-sm;
 
-$btn-transition:              .4s cubic-bezier(0.39, 0.575, 0.565, 1);
+$btn-transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
 
 // $btn-focus-box-shadow:        none!important;

@@ -18,6 +18,10 @@ const MyApp = ({ Component, pageProps }) => {
     <>
       <Head>
         <script
+          // The defer attribute tells the browser not to wait for the script.
+          // Instead, the browser will continue to process the HTML, build DOM.
+          // The script loads “in the background”, and then runs when the DOM is fully built.
+          defer
           type="text/javascript"
           src="/assets/scripts/fresh-chat.js"
         ></script>

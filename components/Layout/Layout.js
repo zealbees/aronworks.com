@@ -2,12 +2,10 @@ import React, { useState, useEffect, useContext, useRef } from "react";
 import Head from "next/head";
 
 import styled, { ThemeProvider } from "styled-components";
-import AOS from "aos";
+// import AOS from "aos";
 
 import Header from "../Header";
 import Footer from "../Footer";
-
-import ModalVideo from "../ModalVideo";
 
 import GlobalContext from "../../context/GlobalContext";
 
@@ -53,7 +51,7 @@ const Layout = ({ children }) => {
   const [visibleLoader, setVisibleLoader] = useState(true);
 
   useEffect(() => {
-    AOS.init({ once: true });
+    // AOS.init({ once: true });
     setVisibleLoader(false);
   }, []);
 
@@ -87,7 +85,6 @@ const Layout = ({ children }) => {
         <GlobalStyle />
         <Head>
           <title>AronWorks</title>
-          {/* <link rel="icon" type="image/png" href={imgFavicon} /> */}
         </Head>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
         <div className="site-wrapper overflow-hidden" ref={eleRef}>
@@ -96,8 +93,6 @@ const Layout = ({ children }) => {
 
           <Footer isDark={gContext.footerDark} />
         </div>
-
-        <ModalVideo />
       </div>
     </ThemeProvider>
   );

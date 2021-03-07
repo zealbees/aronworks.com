@@ -192,6 +192,9 @@ Generated using nucleoapp.com
 .icon-small-down::before {
   content: "\ea05";
 }
+.icon-menu-34::before {
+  content: "\eae6";
+}
 
 /* Unused Icons */
 
@@ -1085,10 +1088,6 @@ Generated using nucleoapp.com
 
 .icon-menu-left::before {
   content: "\eae5";
-}
-
-.icon-menu-34::before {
-  content: "\eae6";
 }
 
 .icon-menu-dots-2::before {

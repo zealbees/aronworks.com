@@ -11,7 +11,9 @@ const News = () => (
         <Row className="justify-content-center">
           <div className="col-xl-6 col-lg-7 col-md-9">
             <div className="section-title text-center mb-11 mb-lg-18">
-              <h2 className="title gr-text-4 mb-6">News that helps</h2>
+              <h2 className="title gr-text-4 mb-6">
+                Cudding for your crunchy brain
+              </h2>
               <p className="gr-text-8 px-lg-8 mb-0">
                 We love connecting to our partners by various means. Sharing our
                 thoughts, and experince is one among them.

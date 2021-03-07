@@ -12,20 +12,19 @@ const Pricing = () => {
           <Row className="justify-content-center">
             <Col xl="6" lg="8" md="10">
               <div className="section-title text-center mb-lg-7">
-                <h2 className="gr-text-4 font-weight-bold mb-7">
-                  Pricing &amp; Plans
+                <h4 className="pre-title gr-text-7 text-red mb-7">
+                  Plans for all
+                </h4>
+                <h2 className="title gr-text-4">
+                  Choose the right plan for your business growth.
                 </h2>
-                <p className="gr-text-8 mb-0 px-lg-7 px-xl-0">
-                  With lots of unique blocks, you can easily build a page
-                  without coding. Build your next landing page.
-                </p>
               </div>
             </Col>
           </Row>
           <div className="pricing-section pb-7 pb-lg-20">
             <Container>
               <div className="text-center pt-9">
-                <div
+                {/* <div
                   className="mb-13 d-inline-flex position-relative"
                   id="pricing-dynamic-deck--head"
                 >
@@ -34,8 +33,9 @@ const Pricing = () => {
                   </span>
                   <a
                     href="/#"
-                    className={`btn-toggle mx-3 price-deck-trigger ${isMonthly ? "" : "active"
-                      }`}
+                    className={`btn-toggle mx-3 price-deck-trigger ${
+                      isMonthly ? "" : "active"
+                    }`}
                     onClick={(e) => {
                       e.preventDefault();
                       setIsMonthly(!isMonthly);
@@ -49,7 +49,7 @@ const Pricing = () => {
                   <span className="badge gr-badge text-primary gr-text-12 gr-bg-red-opacity-1 rounded-pill ml-5 text-uppercase">
                     Save 25%
                   </span>
-                </div>
+                </div> */}
                 <Row className="justify-content-center">
                   <Col lg="4" md="6" sm="10" className="mb-9">
                     <div className="pricing-card bg-white gr-hover-shadow-1 border text-left pt-9 pb-9 pr-9 pr-xl-13  pl-9 pl-xl-13 bg-white rounded-10">

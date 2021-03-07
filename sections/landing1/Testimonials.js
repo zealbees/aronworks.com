@@ -6,7 +6,7 @@ const Testimonials = () => {
   return (
     <>
       {/* <!-- Testimonials Area --> */}
-      <div className="testimonial-section pt-lg-21 pb-lg-21 pt-12 pb-8 ">
+      <div className="testimonial-section pt-lg-21 pb-lg-21 pt-12 pb-8 bg-default-6">
         <Container>
           <Row className="justify-content-center">
             <Col xl="6" lg="8" md="10">

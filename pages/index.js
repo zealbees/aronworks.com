@@ -4,6 +4,7 @@ import Hero from "../sections/landing1/Hero";
 import Services from "../sections/landing1/Services";
 import Testimonials from "../sections/landing1/Testimonials";
 import Pricing from "../sections/landing1/Pricing";
+import Feature from "../sections/landing1/Feature";
 import Content2 from "../sections/landing1/Content2";
 import Alert from "../sections/landing1/Alert";
 import News from "../sections/landing1/News";
@@ -25,7 +26,8 @@ const IndexPage = () => {
       >
         <Hero />
         <Services />
-        <Content2 />
+        {/* <Content2 /> */}
+        <Feature />
         {/* <Alert /> */}
         <Pricing />
         <Testimonials />

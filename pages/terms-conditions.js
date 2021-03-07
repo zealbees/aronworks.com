@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import PageWrapper from "../components/PageWrapper";
 
-export const config = { amp: true };
+// export const config = { amp: true };
 
 const TermsConditions = () => {
   return (

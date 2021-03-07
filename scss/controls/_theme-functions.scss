@@ -8,9 +8,18 @@
     @return $value1;
   }
 
-  @if type-of($value1) == number and type-of($value2) == number and comparable($value1, $value2) {
+  @if type-of($value1) ==
+    number and
+    type-of($value2) ==
+    number and
+    comparable($value1, $value2)
+  {
     @return $value1 + $value2;
   }
 
-  @return if($return-calc == true, calc(#{$value1} + #{$value2}), $value1 + unquote(" + ") + $value2);
+  @return if(
+    $return-calc == true,
+    calc(#{$value1} + #{$value2}),
+    $value1 + unquote(" + ") + $value2
+  );
 }

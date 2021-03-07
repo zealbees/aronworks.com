@@ -31,6 +31,7 @@ const News = () => (
               <Link href="/">
                 <a className="card-img">
                   <Image
+                    layout="responsive"
                     className="w-100 rounded-top-10"
                     src="/assets/images/news-card-img1.jpg"
                     alt=""
@@ -49,7 +50,7 @@ const News = () => (
                 </Link>
                 <Link href="/">
                   <a>
-                    <h3 className="title text-blackish-blue gr-text-7 mb-0">
+                    <h3 className="title text-eerie-black gr-text-7 mb-0">
                       How to win any job you want. Get started with 5 steps.
                     </h3>
                   </a>
@@ -62,6 +63,7 @@ const News = () => (
               <Link href="/">
                 <a className="card-img">
                   <Image
+                    layout="responsive"
                     className="w-100 rounded-top-10"
                     src="/assets/images/news-card-img2.jpg"
                     alt=""
@@ -80,7 +82,7 @@ const News = () => (
                 </Link>
                 <Link href="/">
                   <a>
-                    <h3 className="title text-blackish-blue gr-text-7 mb-0">
+                    <h3 className="title text-eerie-black gr-text-7 mb-0">
                       10 ways to reduce your office work depression.
                     </h3>
                   </a>
@@ -93,6 +95,7 @@ const News = () => (
               <Link href="/">
                 <a className="card-img">
                   <Image
+                    layout="responsive"
                     className="w-100 rounded-top-10"
                     src="/assets/images/news-card-img3.jpg"
                     alt=""
@@ -111,7 +114,7 @@ const News = () => (
                 </Link>
                 <Link href="/">
                   <a>
-                    <h3 className="title text-blackish-blue gr-text-7 mb-0">
+                    <h3 className="title text-eerie-black gr-text-7 mb-0">
                       Why should you work as a team even on small projects.
                     </h3>
                   </a>

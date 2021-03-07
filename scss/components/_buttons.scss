@@ -8,7 +8,7 @@
   // &:hover {
   //   transform: translateY(-8px);
   // }
-  &-hover-translate-none{
+  &-hover-translate-none {
     &:hover {
       transform: translateY(0);
     }
@@ -17,24 +17,24 @@
     i {
       margin-left: 25px;
     }
-    &-left{
+    &-left {
       i {
         margin-right: 15px;
       }
     }
   }
-  &-primary{
+  &-primary {
     color: #fff;
     &.with-icon {
       i {
         margin-left: 25px;
       }
     }
-    &:hover{
+    &:hover {
       background: $primary;
     }
   }
-  &-white{
+  &-white {
     border: 1px solid #d5d7dd;
     &:hover {
       color: $primary;
@@ -48,7 +48,7 @@
       justify-content: center;
       i {
         margin-left: 16px;
-        transition: .4s;
+        transition: 0.4s;
       }
       &:hover {
         i {
@@ -64,7 +64,7 @@
   align-items: center;
   i {
     margin-left: auto;
-    transition: .4s;
+    transition: 0.4s;
   }
   &:hover {
     i {
@@ -73,29 +73,29 @@
   }
 }
 
-.btn-toggle{
+.btn-toggle {
   width: 72px;
   height: 33px;
   border-radius: 17px;
   background-color: rgba($blackish-blue, 0.15);
   position: relative;
   margin: 0 15px;
-  span{
+  span {
     width: 21px;
     height: 21px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     position: absolute;
     left: 0;
     margin-left: 6px;
     top: 0;
     margin-top: 6px;
-    transition: .4s;;
+    transition: 0.4s;
     border-radius: 500px;
-    pointer-events:none;
+    pointer-events: none;
   }
-  &.active{
+  &.active {
     background: $primary;
-    span{
+    span {
       left: calc(100% - 33px);
     }
   }

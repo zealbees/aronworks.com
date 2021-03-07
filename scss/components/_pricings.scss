@@ -1,36 +1,34 @@
-[data-pricing-dynamic][data-value-active="yearly"]{
-  .dynamic-value{
-    &:before{
-    display: inline-block;
-    content: attr(data-yearly);
+[data-pricing-dynamic][data-value-active="yearly"] {
+  .dynamic-value {
+    &:before {
+      display: inline-block;
+      content: attr(data-yearly);
     }
   }
-  [data-pricing-trigger]{
+  [data-pricing-trigger] {
     background: $primary;
-    span{
-      
+    span {
       left: calc(100% - 33px);
     }
   }
 }
-[data-pricing-dynamic][data-value-active="monthly"]{
-  .dynamic-value{
-    &:before{
+[data-pricing-dynamic][data-value-active="monthly"] {
+  .dynamic-value {
+    &:before {
       display: inline-block;
       content: attr(data-monthly);
     }
   }
-  
 }
 
-.dynamic-value{
-  &:before{
+.dynamic-value {
+  &:before {
     display: inline-block;
     content: attr(data-active);
   }
 }
-.static-value{
-  &:before{
+.static-value {
+  &:before {
     display: inline-block;
     content: attr(data-active);
   }

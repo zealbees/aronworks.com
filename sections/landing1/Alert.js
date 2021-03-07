@@ -16,7 +16,8 @@ const Alert = () => {
                   New
                 </span>
                 <span className="alert-text gr-text-9 text-white">
-                  "A business without website is like a ship lost in the horizon"
+                  "A business without website is like a ship lost in the
+                  horizon"
                 </span>
               </div>
             </Col>

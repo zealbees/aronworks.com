@@ -8,16 +8,16 @@
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 
-.container.container-1600{
-  max-width:1600px
+.container.container-1600 {
+  max-width: 1600px;
 }
 
-.element-preview-tab{
+.element-preview-tab {
   .nav-link {
     padding: 7px 16px;
-    margin-left:5px;
-    transition: .4s;
-    font-size: $h8-font-size;//Approx 13 px
+    margin-left: 5px;
+    transition: 0.4s;
+    font-size: $h8-font-size; //Approx 13 px
     font-weight: 700;
     text-transform: uppercase;
     color: $blackish-blue;
@@ -26,16 +26,15 @@
       background: rgba($blue, 0.2);
       color: $blue;
     }
-  
   }
 }
-.code-single-block{
+.code-single-block {
   max-height: 500px;
   overflow-y: auto;
-  div.code-toolbar > .toolbar{
+  div.code-toolbar > .toolbar {
     top: 15px;
     right: 15px;
-    button{
+    button {
       color: #fff;
       font-size: 13px;
       padding: 0 13px;
@@ -46,14 +45,14 @@
       font-weight: 700;
       border-radius: 5px;
     }
-  } 
+  }
 }
 
-.element-block{
-  .site-header--absolute{
+.element-block {
+  .site-header--absolute {
     z-index: 998;
   }
-  .nav-item.dropdown{
+  .nav-item.dropdown {
     z-index: 98;
   }
 }

@@ -28,10 +28,11 @@ const Footer = () => {
   return (
     <>
       <div
-        className={`footer-section ${gContext.footer.theme === "dark"
+        className={`footer-section ${
+          gContext.footer.theme === "dark"
             ? "bg-blackish-blue dark-mode-texts"
             : ""
-          }`}
+        }`}
       >
         <Container>
           <div className="footer-top pt-14 pt-lg-25 pb-lg-19">
@@ -195,10 +196,11 @@ const Footer = () => {
                 >
                   © 2020 Copyright, All Right Reserved, Made by Grayic with
                   <i
-                    className={`icon icon-heart-2-2 ${gContext.footer.theme === "dark"
+                    className={`icon icon-heart-2-2 ${
+                      gContext.footer.theme === "dark"
                         ? "text-sky-blue"
                         : "text-green"
-                      } align-middle ml-2`}
+                    } align-middle ml-2`}
                   ></i>
                 </p>
               </Col>

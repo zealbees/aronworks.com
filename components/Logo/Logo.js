@@ -8,7 +8,6 @@ const Logo = ({ white, height, className = "", ...rest }) => {
       <a className={`d-block ${className}`} {...rest}>
         {white ? (
           <Image
-            quality="100"
             src="/assets/images/logo.svg"
             alt="AronWorks"
             width={200}
@@ -16,7 +15,6 @@ const Logo = ({ white, height, className = "", ...rest }) => {
           />
         ) : (
           <Image
-            quality="100"
             src="/assets/images/logo.svg"
             alt="AronWorks"
             width={200}

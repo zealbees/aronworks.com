@@ -5,7 +5,7 @@ import { openFreshChat } from "../../utils/freshChat";
 
 const Hero = () => {
   return (
-    <div className="hero-area position-relative bg-default-6 bg-pattern pattern-4 pt-15 pt-lg-29 pb-15 pb-lg-29">
+    <div className="hero-area position-relative bg-default-6 pt-15 pt-lg-29 pb-15 pb-lg-29">
       <Container>
         <Row className="justify-content-center align-items-center">
           <Col lg="6" md="9" className="order-lg-2">

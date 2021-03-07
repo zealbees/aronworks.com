@@ -34,8 +34,9 @@ const Pricing = () => {
                   </span>
                   <a
                     href="/#"
-                    className={`btn-toggle mx-3 price-deck-trigger ${isMonthly ? "" : "active"
-                      }`}
+                    className={`btn-toggle mx-3 price-deck-trigger ${
+                      isMonthly ? "" : "active"
+                    }`}
                     onClick={(e) => {
                       e.preventDefault();
                       setIsMonthly(!isMonthly);
@@ -74,24 +75,24 @@ const Pricing = () => {
                         </span>
                         <ul className="card-list list-style-check pl-0 mt-7 mt-lg-11">
                           <li className="gr-text-9">
-                            <i className="icon icon-check-simple text-secondary"></i>
+                            <i className="icon icon-check-simple text-green"></i>
                             Commercial License
                           </li>
                           <li className="gr-text-9">
-                            <i className="icon icon-check-simple text-secondary"></i>
+                            <i className="icon icon-check-simple text-green"></i>
                             100+ HTML UI Elements
                           </li>
                           <li className="gr-text-9">
-                            <i className="icon icon-check-simple text-secondary"></i>
+                            <i className="icon icon-check-simple text-green"></i>
                             Unlimited Domain Support
                           </li>
                           <li className="disabled gr-text-9">
-                            <i className="icon icon-simple-remove"></i>6 months
-                            premium support
+                            <i className="icon icon-simple-remove text-secondary"></i>
+                            6 months premium support
                           </li>
                           <li className="disabled gr-text-9">
-                            <i className="icon icon-simple-remove"></i>Lifetime
-                            updates
+                            <i className="icon icon-simple-remove text-secondary"></i>
+                            Lifetime updates
                           </li>
                         </ul>
                       </div>
@@ -128,24 +129,24 @@ const Pricing = () => {
                         </span>
                         <ul className="card-list list-style-check pl-0 mt-7 mt-lg-11">
                           <li className="gr-text-9">
-                            <i className="icon icon-check-simple text-secondary"></i>
+                            <i className="icon icon-check-simple text-green"></i>
                             Commercial License
                           </li>
                           <li className="gr-text-9">
-                            <i className="icon icon-check-simple text-secondary"></i>
+                            <i className="icon icon-check-simple text-green"></i>
                             100+ HTML UI Elements
                           </li>
                           <li className="gr-text-9">
-                            <i className="icon icon-check-simple text-secondary"></i>
+                            <i className="icon icon-check-simple text-green"></i>
                             Unlimited Domain Support
                           </li>
                           <li className="gr-text-9">
-                            <i className="icon icon-check-simple text-secondary"></i>
+                            <i className="icon icon-check-simple text-green"></i>
                             6 months premium support
                           </li>
                           <li className="disabled gr-text-9">
-                            <i className="icon icon-simple-remove"></i>Lifetime
-                            updates
+                            <i className="icon icon-simple-remove text-secondary"></i>
+                            Lifetime updates
                           </li>
                         </ul>
                       </div>
@@ -182,23 +183,23 @@ const Pricing = () => {
                         </span>
                         <ul className="card-list list-style-check pl-0 mt-7 mt-lg-11">
                           <li className="gr-text-9">
-                            <i className="icon icon-check-simple text-secondary"></i>
+                            <i className="icon icon-check-simple text-green"></i>
                             Commercial License
                           </li>
                           <li className="gr-text-9">
-                            <i className="icon icon-check-simple text-secondary"></i>
+                            <i className="icon icon-check-simple text-green"></i>
                             100+ HTML UI Elements
                           </li>
                           <li className="gr-text-9">
-                            <i className="icon icon-check-simple text-secondary"></i>
+                            <i className="icon icon-check-simple text-green"></i>
                             Unlimited Domain Support
                           </li>
                           <li className="gr-text-9">
-                            <i className="icon icon-check-simple text-secondary"></i>
+                            <i className="icon icon-check-simple text-green"></i>
                             6 months premium support
                           </li>
                           <li className="gr-text-9">
-                            <i className="icon icon-check-simple text-secondary"></i>
+                            <i className="icon icon-check-simple text-green"></i>
                             Lifetime updates
                           </li>
                         </ul>

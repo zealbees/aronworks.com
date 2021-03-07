@@ -1,9 +1,9 @@
-.parallax-section-750{
-  height:  350px;
-    @include tablet{
-      height:  500px;
-    }
-  @include desktops{
-    height:  792px;
+.parallax-section-750 {
+  height: 350px;
+  @include tablet {
+    height: 500px;
+  }
+  @include desktops {
+    height: 792px;
   }
 }

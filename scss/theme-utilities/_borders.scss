@@ -1,12 +1,11 @@
-.gr-md-rounded{
-  @include tablet{
+.gr-md-rounded {
+  @include tablet {
     border-radius: $border-radius;
   }
 }
 
-
-.border-lg-left{
-  @include desktops{
+.border-lg-left {
+  @include desktops {
     border-left: 1px solid var(--border-color);
   }
 }

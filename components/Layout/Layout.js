@@ -79,12 +79,9 @@ const Layout = ({ children }) => {
     );
   }, [gContext]);
 
-
   return (
     <ThemeProvider
-      theme={
-        gContext.themeDark ? getTheme(modes.dark) : getTheme(modes.light)
-      }
+      theme={gContext.themeDark ? getTheme(modes.dark) : getTheme(modes.light)}
     >
       <div data-theme-mode-panel-active data-theme="light">
         <GlobalStyle />

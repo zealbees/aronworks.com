@@ -21,10 +21,11 @@ const Footer = () => {
   return (
     <>
       <div
-        className={`footer-section pt-15 pt-lg-25 pb-lg-21 ${gContext.footer.theme === "dark"
+        className={`footer-section pt-15 pt-lg-25 pb-lg-21 ${
+          gContext.footer.theme === "dark"
             ? "dark-mode-texts bg-blackish-blue"
             : ""
-          }`}
+        }`}
       >
         <Container>
           <Row className="justify-content-center">

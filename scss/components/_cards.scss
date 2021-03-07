@@ -1,7 +1,7 @@
-.card-list{
+.card-list {
   max-width: 315px;
   margin: 30px 0;
-  li{
+  li {
     color: $blackish-blue;
     // font-size: 17px;
     // font-weight: 400;
@@ -36,23 +36,19 @@
   }
 }
 
-
-.job-card-hover{
-  
-  i{
-    transition: .4s;
+.job-card-hover {
+  i {
+    transition: 0.4s;
   }
-  &:hover{
-    i{
-      color: $primary!important;
+  &:hover {
+    i {
+      color: $primary !important;
     }
   }
-  
 }
 
-
 .category-card {
-  transition: .4s;
+  transition: 0.4s;
   background-color: #fff;
   .title {
     color: $blackish-blue;
@@ -64,15 +60,14 @@
   .card-icon {
     background-color: $blue;
     @include tablet {
-      transition: .3s;
+      transition: 0.3s;
       transform: scale(0);
       // transform-origin: center;
       background-color: rgba(#fff, 0.2);
-
     }
   }
   &:hover {
-    @include tablet{
+    @include tablet {
       background-color: $blue;
       .card-title {
         color: #fff;

@@ -1,10 +1,10 @@
-.gr-check-input{
+.gr-check-input {
   padding-top: 5px;
   margin-bottom: 20px;
-  input:checked{
-    &~.checkbox{
+  input:checked {
+    & ~ .checkbox {
       background: $primary;
-      &::after{
+      &::after {
         // content: "\f14a";
         // font-family: "Font Awesome 5 free";
         // font-weight: 900;
@@ -13,16 +13,16 @@
       }
     }
   }
-  .checkbox{
+  .checkbox {
     position: relative;
     line-height: 1;
     width: 19px;
     height: 19px;
     border-radius: 3px;
-    background-color: #E7E9ED;
-    &:after{
+    background-color: #e7e9ed;
+    &:after {
       content: "\eaba";
-      font-family: 'Grayic';
+      font-family: "Grayic";
       font-size: 15px;
       font-weight: normal;
       color: $black;
@@ -39,14 +39,14 @@
   }
 }
 
-.gr-radio-input{
-  input{
-    &:checked{
-      ~ label{
-        .round-indicator{
+.gr-radio-input {
+  input {
+    &:checked {
+      ~ label {
+        .round-indicator {
           border: 1px solid $primary;
           background: #fff;
-          &:after{
+          &:after {
             opacity: 1;
           }
         }
@@ -54,17 +54,17 @@
     }
   }
 }
-.round-indicator{
+.round-indicator {
   position: relative;
   display: inline-block;
-  border: 1px solid #E5E5E5;
-  background-color: #E5E5E5;
+  border: 1px solid #e5e5e5;
+  background-color: #e5e5e5;
   min-width: 20px;
   max-width: 20px;
   min-height: 20px;
   max-height: 20px;
   border-radius: 500px;
-  &:after{
+  &:after {
     content: "";
     background-color: $primary;
     min-width: 12px;
@@ -76,32 +76,31 @@
     top: 50%;
     left: 50%;
     opacity: 0;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
 }
 
-
-.location-filter-form{
+.location-filter-form {
   border-radius: 10px;
-  .single-input{
-    border-bottom:1px solid $gray-210;
-    @include mobile-lg{
-      border-right:1px solid $gray-210;
+  .single-input {
+    border-bottom: 1px solid $gray-210;
+    @include mobile-lg {
+      border-right: 1px solid $gray-210;
     }
-    @include desktops{
-      border-bottom:0;
+    @include desktops {
+      border-bottom: 0;
     }
-    &:last-child{
+    &:last-child {
       border-right: 0;
     }
   }
-  .location-select{
+  .location-select {
     position: relative;
     padding-left: 50px;
     border: 0;
     font-size: 15px;
-    &:before{
-      content: '\f3c5';
+    &:before {
+      content: "\f3c5";
       font-family: "Font Awesome 5 Free";
       font-weight: 700;
       left: 0;
@@ -114,48 +113,46 @@
       align-items: center;
       justify-content: center;
     }
-    .list{
+    .list {
       margin-top: 0;
     }
   }
-.form-control{
-  &:focus{
-    box-shadow: none;
-  }
-}
-
-.date-picker{
-  display: flex;
-  align-items: center;
-  >div{
-    height: 100%;
-    width: 100%;
-  }
-}
-    .date-picker-input{
-      padding-left: 45px;
-      margin-top: 3px;
-      color: $blackish-blue;
-      font-size: 15px;
-      &::placeholder{
-        color: $blackish-blue;
-      }
+  .form-control {
+    &:focus {
+      box-shadow: none;
     }
-    .date-picker-icon{
-      font-size: 18px;
-      width: 45px;
+  }
+
+  .date-picker {
+    display: flex;
+    align-items: center;
+    > div {
       height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 100%;
+    }
+  }
+  .date-picker-input {
+    padding-left: 45px;
+    margin-top: 3px;
+    color: $blackish-blue;
+    font-size: 15px;
+    &::placeholder {
       color: $blackish-blue;
-      position: absolute;
-      top: 0;
-      left: 0;
-
     }
-    .search-btn{
-      min-width: 199px;
-      
-    }
+  }
+  .date-picker-icon {
+    font-size: 18px;
+    width: 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $blackish-blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .search-btn {
+    min-width: 199px;
+  }
 }

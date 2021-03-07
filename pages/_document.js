@@ -39,10 +39,25 @@ export default class MyDocument extends Document {
             href="https://assetscdn-wchat.in.freshchat.com"
           />
 
+          {/* Browser support for dns-prefetch is slightly different from preconnect support, 
+          so dns-prefetch can serve as a fallback for browsers that don't support preconnect. */}
+          {/* https://web.dev/efficiently-load-third-party-javascript */}
+          <link rel="dns-prefetch" href="https://wchat.in.freshchat.com" />
+          <link
+            rel="dns-prefetch"
+            href="https://assetscdn-wchat.in.freshchat.com"
+          />
+
           {/* Preload Script */}
           <link
             rel="preload"
             href="https://wchat.in.freshchat.com/js/widget.js"
+            as="script"
+          />
+
+          <link
+            rel="preload"
+            href="/assets/scripts/fresh-chat.js"
             as="script"
           />
 
@@ -68,10 +83,10 @@ export default class MyDocument extends Document {
           />
           <link href="/assets/fonts/icon-font/css/style.css" rel="stylesheet" />
 
+          {/* The defer attribute tells the browser not to wait for the script. */}
+          {/* Instead, the browser will continue to process the HTML, build DOM. */}
+          {/* The script loads “in the background”, and then runs when the DOM is fully built. */}
           <script
-            // The defer attribute tells the browser not to wait for the script.
-            // Instead, the browser will continue to process the HTML, build DOM.
-            // The script loads “in the background”, and then runs when the DOM is fully built.
             defer
             type="text/javascript"
             src="/assets/scripts/fresh-chat.js"

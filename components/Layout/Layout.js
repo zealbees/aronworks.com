@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext, useRef } from "react";
 import Head from "next/head";
 
 import styled, { ThemeProvider } from "styled-components";
-// import AOS from "aos";
 
 import Header from "../Header";
 import Footer from "../Footer";
@@ -11,12 +10,11 @@ import GlobalContext from "../../context/GlobalContext";
 
 import GlobalStyle from "../../utils/globalStyle";
 
-// import imgFavicon from "../../assets/favicon.png";
-
 import { get, merge } from "lodash";
 
 // the full theme object
 import { theme as baseTheme } from "../../utils";
+import { animation } from "polished";
 
 const Loader = styled.div`
   position: fixed;
@@ -50,8 +48,25 @@ const Layout = ({ children }) => {
 
   const [visibleLoader, setVisibleLoader] = useState(true);
 
-  useEffect(() => {
-    // AOS.init({ once: true });
+  useEffect(async () => {
+    // https://web.dev/adaptive-serving-based-on-network-quality/
+    // downlink -	The bandwidth estimate in megabits per second. eg. 1.5 MB/Sec
+
+    // Only Load AOS Animation if the connection is 4g === 1.5 MB/Sec
+    // Or Browser which does not support navigator.connection load AOS animation
+
+    // Animation will only loaded after the first render as we are importing AOS in useEffect
+    if (!navigator?.connection || navigator?.connection?.downlink > 1.5) {
+      const AOS = await import("aos");
+      AOS.init({ once: true });
+
+      const style = document.createElement("link");
+      style.href = "/assets/styles/aos.css";
+      style.rel = "stylesheet";
+      style.async = true;
+      document.head.appendChild(style);
+    }
+
     setVisibleLoader(false);
   }, []);
 

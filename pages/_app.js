@@ -13,18 +13,22 @@ import "../scss/bootstrap.scss";
 import "../scss/main.scss";
 import "../scss/custom.scss";
 
+// export function reportWebVitals(metric) {
+//   console.log(metric);
+// }
+
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <script
+        {/* <script
           // The defer attribute tells the browser not to wait for the script.
           // Instead, the browser will continue to process the HTML, build DOM.
           // The script loads “in the background”, and then runs when the DOM is fully built.
           defer
           type="text/javascript"
           src="/assets/scripts/fresh-chat.js"
-        ></script>
+        ></script> */}
       </Head>
       <GlobalProvider>
         <Layout>

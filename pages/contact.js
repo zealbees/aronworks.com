@@ -31,9 +31,8 @@ const Contact = () => {
                 <div className="px-md-15 text-center">
                   <h2 className="title gr-text-2 mb-9">Contact us</h2>
                   <p className="gr-text-8 mb-13">
-                    With lots of unique blocks, you can easily build a page
-                    without coding. Build your next consultancy website within
-                    few minutes.
+                    Use the form to drop us an email or rech us in the number
+                    below, we are more than happy to help you.
                   </p>
                 </div>
               </Col>

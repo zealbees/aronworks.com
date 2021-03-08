@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Image from "next/image";
 
 // import icon1 from "../../assets/image/svg/l5-feature-icon1.svg";
 // import icon2 from "../../assets/image/svg/l5-feature-icon2.svg";
@@ -37,6 +38,13 @@ const Feature = () => (
                 <div className="feature-widget media">
                   <div className="widget-icon p-7 rounded-15 mr-9 gr-bg-blue-opacity-1">
                     {/* <img src={icon1} alt="" /> */}
+
+                    <Image
+                      src="/assets/images/customer-centric.svg"
+                      alt=""
+                      width={100}
+                      height={100}
+                    />
                   </div>
                   <div className="widget-text">
                     <h3 className="title gr-text-7 mb-6">Customer Centric</h3>
@@ -58,6 +66,12 @@ const Feature = () => (
                 <div className="feature-widget media">
                   <div className="widget-icon p-7 rounded-15 mr-9 gr-bg-red-opacity-1">
                     {/* <img src={icon2} alt="" /> */}
+                    <Image
+                      src="/assets/images/inhouse-expertise.svg"
+                      alt=""
+                      width={100}
+                      height={100}
+                    />
                   </div>
                   <div className="widget-text">
                     <h3 className="title gr-text-7 mb-6">In-House Expertise</h3>
@@ -80,11 +94,15 @@ const Feature = () => (
                 <div className="feature-widget media">
                   <div className="widget-icon p-7 rounded-15 mr-9 gr-bg-green-opacity-1">
                     {/* <img src={icon3} alt="" /> */}
+                    <Image
+                      src="/assets/images/commitment.svg"
+                      alt=""
+                      width={100}
+                      height={100}
+                    />
                   </div>
                   <div className="widget-text">
-                    <h3 className="title gr-text-7 mb-6">
-                      Commitment to Perfection
-                    </h3>
+                    <h3 className="title gr-text-7 mb-6">Commitment</h3>
                     <p className="gr-text-9 mb-0 pr-11">
                       {" "}
                       We are not just involved but commited to our clients in
@@ -105,6 +123,12 @@ const Feature = () => (
                 <div className="feature-widget media">
                   <div className="widget-icon p-7 rounded-15 mr-9 gr-bg-blackish-blue-opacity-1">
                     {/* <img src={icon4} alt="" /> */}
+                    <Image
+                      src="/assets/images/360-degree.svg"
+                      alt=""
+                      width={100}
+                      height={100}
+                    />
                   </div>
                   <div className="widget-text">
                     <h3 className="title gr-text-7 mb-6">

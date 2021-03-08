@@ -44,14 +44,14 @@ const News = () => (
                 <Link href="/">
                   <a>
                     <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
-                      Career
+                      Business
                     </p>
                   </a>
                 </Link>
                 <Link href="/">
                   <a>
                     <h3 className="title text-eerie-black gr-text-7 mb-0">
-                      How to win any job you want. Get started with 5 steps.
+                      The best way to build a website: custom vs template.
                     </h3>
                   </a>
                 </Link>
@@ -76,14 +76,14 @@ const News = () => (
                 <Link href="/">
                   <a>
                     <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
-                      Lifestyle
+                      Business
                     </p>
                   </a>
                 </Link>
                 <Link href="/">
                   <a>
                     <h3 className="title text-eerie-black gr-text-7 mb-0">
-                      10 ways to reduce your office work depression.
+                      5 Reasons why small business needs website in 2021.
                     </h3>
                   </a>
                 </Link>
@@ -108,14 +108,14 @@ const News = () => (
                 <Link href="/">
                   <a>
                     <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
-                      Career
+                      Business
                     </p>
                   </a>
                 </Link>
                 <Link href="/">
                   <a>
                     <h3 className="title text-eerie-black gr-text-7 mb-0">
-                      Why should you work as a team even on small projects.
+                      7 reasons why you should hire a professional writer.
                     </h3>
                   </a>
                 </Link>

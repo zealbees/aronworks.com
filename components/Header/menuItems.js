@@ -15,9 +15,9 @@ export const menuItems = [
     name: "services",
     label: "Services",
     items: [
-      { name: "consultation", label: "Graphic Design" },
       { name: "product", label: "Web Development" },
       { name: "b2b", label: "Content Writing" },
+      { name: "consultation", label: "SEO" },
     ],
   },
   // {

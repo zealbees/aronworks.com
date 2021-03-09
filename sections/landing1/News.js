@@ -44,7 +44,7 @@ const News = () => (
                 <Link href="/">
                   <a>
                     <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
-                      Business
+                      Website
                     </p>
                   </a>
                 </Link>
@@ -108,7 +108,7 @@ const News = () => (
                 <Link href="/">
                   <a>
                     <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
-                      Business
+                      Content Writting
                     </p>
                   </a>
                 </Link>

@@ -107,7 +107,7 @@ const Footer = () => {
                         </Link>
                       </li>
                       <li className="py-2">
-                        <Link href="/">
+                        <Link href="/terms-conditions">
                           <a className={linkClassName}>
                             Terms &amp; Conditions
                           </a>

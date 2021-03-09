@@ -1,17 +1,5 @@
 export const menuItems = [
   {
-    name: "contact",
-    label: "Contact Us",
-  },
-  {
-    name: "about",
-    label: "About",
-  },
-  {
-    name: "pricing",
-    label: "Pricing",
-  },
-  {
     name: "services",
     label: "Services",
     items: [
@@ -19,6 +7,15 @@ export const menuItems = [
       { name: "b2b", label: "Content Writing" },
       { name: "consultation", label: "SEO" },
     ],
+  },
+
+  {
+    name: "pricing",
+    label: "Pricing",
+  },
+  {
+    name: "contact",
+    label: "Contact Us",
   },
   // {
   //   name: "demos",

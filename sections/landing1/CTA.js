@@ -22,7 +22,7 @@ const CTA = () => {
               >
                 Reach Us
               </button>
-              <p className="gr-text-11 mb-0 mt-6">It takes only 2 mins!</p>
+              <p className="gr-text-11 mb-0 mt-6">It only takes 2 mins!</p>
             </div>
           </Col>
         </Row>

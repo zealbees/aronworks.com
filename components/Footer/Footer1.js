@@ -8,6 +8,9 @@ import Logo from "../Logo";
 const Footer = () => {
   const gContext = useContext(GlobalContext);
 
+  const contactClassName =
+    gContext.footer.theme === "dark" ? "gr-text-color" : "text-primary";
+
   const linkClassName =
     gContext.footer.theme === "dark"
       ? "gr-text-color gr-hover-text-red"
@@ -32,11 +35,11 @@ const Footer = () => {
             <Col lg="3" md="4">
               <Logo
                 white={gContext.footer.theme === "dark"}
-                className="footer-logo mb-11"
+                className="footer-logo mb-7"
               />
               <p className="gr-text-11">
-                With lots of unique blocks, you can easily build a page without
-                coding. Build your next landing page.
+                Whether its expansion or growth, selling product or services,
+                partner with us for strong online presence.
               </p>
               <ul className="social-icons py-7 list-unstyled mb-7 mb-lg-0">
                 <li className="mr-2">
@@ -69,74 +72,16 @@ const Footer = () => {
                 </li>
               </ul>
             </Col>
+
             <Col lg="8" md="8" className="offset-lg-1">
               <Row>
-                <Col xs="6" lg="3">
-                  <div className="single-footer mb-13 mb-lg-9">
-                    <p className="footer-title gr-text-11 mb-7">Company</p>
-                    <ul className="footer-list list-unstyled gr-text-9">
-                      <li className="py-2">
-                        <Link href="/">
-                          <a className={linkClassName}>About us</a>
-                        </Link>
-                      </li>
-                      <li className="py-2">
-                        <Link href="/">
-                          <a className={linkClassName}>Contact us</a>
-                        </Link>
-                      </li>
-                      <li className="py-2">
-                        <Link href="/">
-                          <a className={linkClassName}>Careers</a>
-                        </Link>
-                      </li>
-                      <li className="py-2">
-                        <Link href="/">
-                          <a className={linkClassName}>Press</a>
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </Col>
-                <Col xs="6" lg="3">
-                  <div className="single-footer mb-13 mb-lg-9">
-                    <p className="footer-title gr-text-11 mb-7">Product</p>
-                    <ul className="footer-list list-unstyled gr-text-9">
-                      <li className="py-2">
-                        <Link href="/">
-                          <a className={linkClassName}>Features</a>
-                        </Link>
-                      </li>
-                      <li className="py-2">
-                        <Link href="/">
-                          <a className={linkClassName}>Pricing</a>
-                        </Link>
-                      </li>
-                      <li className="py-2">
-                        <Link href="/">
-                          <a className={linkClassName}>News</a>
-                        </Link>
-                      </li>
-                      <li className="py-2">
-                        <Link href="/">
-                          <a className={linkClassName}>Help desk</a>
-                        </Link>
-                      </li>
-                      <li className="py-2">
-                        <Link href="/">
-                          <a className={linkClassName}>Support</a>
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </Col>
-                <Col xs="6" lg="3">
+                <Col xs="6" lg="4">
                   <div className="single-footer mb-13 mb-lg-9">
                     <p className="footer-title gr-text-11 mb-7">Services</p>
                     <ul className="footer-list list-unstyled gr-text-9">
                       <li className="py-2">
                         <Link href="/">
-                          <a className={linkClassName}>Digital Marketing</a>
+                          <a className={linkClassName}>Web Development</a>
                         </Link>
                       </li>
                       <li className="py-2">
@@ -149,15 +94,10 @@ const Footer = () => {
                           <a className={linkClassName}>SEO for Business</a>
                         </Link>
                       </li>
-                      <li className="py-2">
-                        <Link href="/">
-                          <a className={linkClassName}>UI Design</a>
-                        </Link>
-                      </li>
                     </ul>
                   </div>
                 </Col>
-                <Col xs="6" lg="3">
+                <Col xs="6" lg="4">
                   <div className="single-footer mb-13 mb-lg-9">
                     <p className="footer-title gr-text-11 mb-7">Legal</p>
                     <ul className="footer-list list-unstyled gr-text-9">
@@ -173,10 +113,28 @@ const Footer = () => {
                           </a>
                         </Link>
                       </li>
+                    </ul>
+                  </div>
+                </Col>
+                <Col xs="6" lg="4">
+                  <div className="single-footer mb-13 mb-lg-9">
+                    <p className="footer-title gr-text-11 mb-7">Contact us</p>
+                    <ul className="footer-list list-unstyled">
                       <li className="py-2">
-                        <Link href="/">
-                          <a className={linkClassName}>Return Policy</a>
-                        </Link>
+                        <a
+                          className={`gr-text-9 font-weight-bold hover-underline active ${contactClassName}`}
+                          href="mailto:hello@aronworks.com"
+                        >
+                          hello@aronworks.com
+                        </a>
+                      </li>
+                      <li className="py-2">
+                        <a
+                          className={`gr-text-9 font-weight-bold hover-underline active ${contactClassName}`}
+                          href="tel:+917708521528"
+                        >
+                          +91 7708 521 528
+                        </a>
                       </li>
                     </ul>
                   </div>

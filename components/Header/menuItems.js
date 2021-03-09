@@ -5,7 +5,7 @@ export const menuItems = [
     items: [
       { name: "product", label: "Web Development" },
       { name: "b2b", label: "Content Writing" },
-      { name: "consultation", label: "SEO" },
+      { name: "consultation", label: "SEO  for Business" },
     ],
   },
 

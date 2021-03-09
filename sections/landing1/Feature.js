@@ -1,11 +1,9 @@
 import React, { useContext } from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
-import GlobalContext from "../../context/GlobalContext";
+import Image from "next/image";
 
 const Content = () => {
-  const gContext = useContext(GlobalContext);
-
   return (
     <>
       {/* <!-- Content Area --> */}
@@ -26,10 +24,13 @@ const Content = () => {
           <Row className="align-items-center">
             <Col lg="6">
               <div>
-                <img
+                <Image
+                  layout="responsive"
                   className="w-100 rounded-8"
                   src="/assets/images/why-us.svg"
                   alt=""
+                  width={500}
+                  height={500}
                 />
               </div>
             </Col>

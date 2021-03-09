@@ -102,7 +102,7 @@ const Services = () => {
                     height={200}
                   />
                 </div>
-                <h3 className="card-title gr-text-6 mb-6">SEO</h3>
+                <h3 className="card-title gr-text-6 mb-6">SEO for Business</h3>
                 <p className="gr-text-9 mb-11">
                   We do SEOs to bring in organic traffic which attracts
                   prospective customers to your business.

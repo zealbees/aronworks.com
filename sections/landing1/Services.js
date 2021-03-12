@@ -60,7 +60,7 @@ const Services = () => {
               data-aos="fade-left"
               data-aos-duration="750"
             >
-              <div className="service-card rounded-10 gr-hover-shadow-4 d-flex flex-column text-center pt-15 px-9 pb-11 bg-services-violet h-100">
+              <div className="service-card rounded-10 gr-hover-shadow-4 d-flex flex-column text-center pt-15 px-9 pb-11 bg-services-green h-100">
                 <div className="card-img mb-11">
                   <Image
                     className="w-100"

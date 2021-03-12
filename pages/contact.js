@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Container, Button } from "react-bootstrap";
+import { Row, Col, Container, Button, Collapse } from "react-bootstrap";
 import PageWrapper from "../components/PageWrapper";
 import { Select } from "../components/Core";
 
@@ -39,7 +39,8 @@ const Contact = () => {
             </Row>
           </Container>
         </div>
-        <div className="contact-section pb-5 pb-md-29 bg-default-2 ">
+
+        <div className="contact-section pb-5 pb-md-19 bg-default-2 ">
           <Container>
             <Row className="justify-content-center">
               <Col

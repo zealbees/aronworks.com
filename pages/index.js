@@ -12,10 +12,11 @@ import Services from "../sections/landing1/Services";
 // import CTA from "../sections/landing1/CTA";
 
 const Feature = dynamic(() => import("../sections/landing1/Feature"));
-const Pricing = dynamic(() => import("../sections/landing1/Pricing"));
+// const Pricing = dynamic(() => import("../sections/landing1/Pricing"));
 const Testimonials = dynamic(() => import("../sections/landing1/Testimonials"));
 const News = dynamic(() => import("../sections/landing1/News"));
 const CTA = dynamic(() => import("../sections/landing1/CTA"));
+const FAQ = dynamic(() => import("../sections/landing1/FAQ"));
 
 const IndexPage = () => {
   return (
@@ -36,9 +37,10 @@ const IndexPage = () => {
         {/* <Content2 /> */}
         <Feature />
         {/* <Alert /> */}
-        <Pricing />
+        {/* <Pricing /> */}
         <Testimonials />
         <News />
+        <FAQ />
         <CTA />
       </PageWrapper>
     </>

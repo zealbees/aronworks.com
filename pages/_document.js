@@ -32,6 +32,13 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          {/* Global site tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-HMW0EZTJP0"
+          ></script>
+          <script async src="/assets/scripts/ga.js"></script>
+
           {/* Preconnect - establish network connections early and increase performance */}
           <link rel="preconnect" href="https://wchat.in.freshchat.com" />
           <link

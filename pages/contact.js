@@ -1,16 +1,33 @@
-import React from "react";
-import { Row, Col, Container, Button, Collapse } from "react-bootstrap";
+import React, { useState } from "react";
+import { Row, Col, Container, Button } from "react-bootstrap";
 import PageWrapper from "../components/PageWrapper";
-import { Select } from "../components/Core";
-
-const defaultOptions = [
-  { value: "dm", label: "Digital Marketing" },
-  { value: "cr", label: "Content Writing" },
-  { value: "gd", label: "Graphic Design" },
-  { value: "seo", label: "SEO for Business" },
-];
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [message, setMessage] = useState("");
+
+  function handleChange(event) {
+    const eventName = event.target.name;
+    const eventValue = event.target.value;
+
+    switch (eventName) {
+      case "name":
+        setName(eventValue);
+        break;
+      case "email":
+        setEmail(eventValue);
+        break;
+      case "mobile":
+        setMobile(eventValue);
+        break;
+      case "message":
+        setMessage(eventValue);
+        break;
+    }
+  }
+
   return (
     <>
       <PageWrapper
@@ -122,10 +139,12 @@ const Contact = () => {
                       <input
                         className="form-control px-7 gr-text-11 border"
                         type="text"
+                        value={name}
                         id="name"
                         name="name"
                         placeholder="i.e. John Doe"
                         required
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="form-group">
@@ -138,10 +157,12 @@ const Contact = () => {
                       <input
                         className="form-control px-7 gr-text-11 border"
                         type="text"
+                        value={email}
                         id="email"
                         name="email"
                         placeholder="i.e. john@mail.com"
                         required
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="form-group">
@@ -149,31 +170,38 @@ const Contact = () => {
                         htmlFor="name"
                         className="gr-text-11 font-weight-bold text-blackish-blue"
                       >
-                        Phone
+                        mobile
                       </label>
                       <input
                         className="form-control px-7 gr-text-11 border"
                         type="text"
-                        id="phone"
-                        name="phone"
+                        value={mobile}
+                        id="mobile"
+                        name="mobile"
                         placeholder="i.e. 123-456-7890"
                         required
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="form-group">
                       <label
-                        htmlFor="name"
+                        htmlFor="message"
                         className="gr-text-11 font-weight-bold text-blackish-blue"
                       >
-                        Which service do you need?{" "}
+                        Message
                       </label>
-                      <Select
-                        options={defaultOptions}
-                        className=" gr-text-11 mb-7"
-                        accentColor="primary"
-                        bg="transparent"
-                      />
+                      <textarea
+                        className="form-control px-7 gr-text-11 border"
+                        value={message}
+                        id="message"
+                        name="message"
+                        placeholder="Type your message"
+                        required
+                        rows="3"
+                        onChange={handleChange}
+                      ></textarea>
                     </div>
+
                     <div className="button-block mb-2">
                       <Button className="form-btn w-100" type="submit">
                         Send

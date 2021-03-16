@@ -28,6 +28,18 @@ const Contact = () => {
     }
   }
 
+  function handleSubmit(event) {
+    console.table({ name, email, mobile, message });
+    event.preventDefault();
+    clearForm();
+  }
+
+  function clearForm() {
+    setName("");
+    setEmail("");
+    setMobile("");
+    setMessage("");
+  }
   return (
     <>
       <PageWrapper
@@ -203,7 +215,11 @@ const Contact = () => {
                     </div>
 
                     <div className="button-block mb-2">
-                      <Button className="form-btn w-100" type="submit">
+                      <Button
+                        onClick={handleSubmit}
+                        className="form-btn w-100"
+                        type="submit"
+                      >
                         Send
                       </Button>
                     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -44,13 +45,12 @@ const Services = () => {
                   We build accesible and engaging websites for small and medium
                   scale business to expand their growth.
                 </p>
-                <a
-                  href="/"
-                  className="gr-text-9 btn-link with-icon mt-auto text-black"
-                >
-                  Learn more{" "}
-                  <i className="icon icon-tail-right font-weight-bold"></i>
-                </a>
+                <Link href="/web-development">
+                  <a className="gr-text-9 btn-link with-icon mt-auto text-black">
+                    Learn more{" "}
+                    <i className="icon icon-tail-right font-weight-bold"></i>
+                  </a>
+                </Link>
               </div>
             </Col>
             <Col
@@ -75,13 +75,12 @@ const Services = () => {
                   We write contents for Blogs, and Web pages which includes your
                   home, landing, about us, contact us etc.
                 </p>
-                <a
-                  href="/"
-                  className="gr-text-9 btn-link with-icon mt-auto text-black"
-                >
-                  Learn more{" "}
-                  <i className="icon icon-tail-right font-weight-bold"></i>
-                </a>
+                <Link href="/content-writing">
+                  <a className="gr-text-9 btn-link with-icon mt-auto text-black">
+                    Learn more{" "}
+                    <i className="icon icon-tail-right font-weight-bold"></i>
+                  </a>
+                </Link>
               </div>
             </Col>
 
@@ -107,13 +106,12 @@ const Services = () => {
                   We do SEOs to bring in organic traffic which attracts
                   prospective customers to your business.
                 </p>
-                <a
-                  href="/"
-                  className="gr-text-9 btn-link with-icon mt-auto text-black"
-                >
-                  Learn more{" "}
-                  <i className="icon icon-tail-right font-weight-bold"></i>
-                </a>
+                <Link href="/seo">
+                  <a className="gr-text-9 btn-link with-icon mt-auto text-black">
+                    Learn more{" "}
+                    <i className="icon icon-tail-right font-weight-bold"></i>
+                  </a>
+                </Link>
               </div>
             </Col>
           </Row>

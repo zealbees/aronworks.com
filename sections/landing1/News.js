@@ -28,7 +28,7 @@ const News = () => (
         >
           <Col md="6" lg="4">
             <div className="location-card mb-9 gr-hover-shadow-1">
-              <Link href="/">
+              <Link href="/blogs/the-best-way-to-build-a-website-custom-vs-template">
                 <a className="card-img">
                   <Image
                     layout="responsive"
@@ -41,14 +41,17 @@ const News = () => (
                 </a>
               </Link>
               <div className="card-content px-9 py-8 bg-white rounded-bottom-10">
-                <Link href="/">
+                <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
+                  3 min read
+                </p>
+                {/* <Link href="/">
                   <a>
                     <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
                       Website
                     </p>
                   </a>
-                </Link>
-                <Link href="/">
+                </Link> */}
+                <Link href="/blogs/the-best-way-to-build-a-website-custom-vs-template">
                   <a>
                     <h3 className="title text-eerie-black gr-text-7 mb-0">
                       The best way to build a website: custom vs template.
@@ -60,7 +63,7 @@ const News = () => (
           </Col>
           <Col md="6" lg="4">
             <div className="location-card mb-9 gr-hover-shadow-1">
-              <Link href="/">
+              <Link href="/blogs/5-reasons-why-small-business-needs-website-in-2021">
                 <a className="card-img">
                   <Image
                     layout="responsive"
@@ -73,14 +76,18 @@ const News = () => (
                 </a>
               </Link>
               <div className="card-content px-9 py-8 bg-white rounded-bottom-10">
-                <Link href="/">
+                <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
+                  3 min read
+                </p>
+
+                {/* <Link href="/">
                   <a>
                     <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
                       Business
                     </p>
                   </a>
-                </Link>
-                <Link href="/">
+                </Link> */}
+                <Link href="/blogs/5-reasons-why-small-business-needs-website-in-2021">
                   <a>
                     <h3 className="title text-eerie-black gr-text-7 mb-0">
                       5 Reasons why small business needs website in 2021.
@@ -92,7 +99,7 @@ const News = () => (
           </Col>
           <Col md="6" lg="4">
             <div className="location-card mb-9 gr-hover-shadow-1">
-              <Link href="/">
+              <Link href="/blogs/7-reasons-why-you-should-hire-a-professional-writer">
                 <a className="card-img">
                   <Image
                     layout="responsive"
@@ -105,14 +112,17 @@ const News = () => (
                 </a>
               </Link>
               <div className="card-content px-9 py-8 bg-white rounded-bottom-10">
-                <Link href="/">
+                <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
+                  3 min read
+                </p>
+                {/* <Link href="/">
                   <a>
                     <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
                       Content Writting
                     </p>
                   </a>
-                </Link>
-                <Link href="/">
+                </Link> */}
+                <Link href="/blogs/7-reasons-why-you-should-hire-a-professional-writer">
                   <a>
                     <h3 className="title text-eerie-black gr-text-7 mb-0">
                       7 reasons why you should hire a professional writer.

@@ -38,39 +38,51 @@ const Footer = () => {
                 className="footer-logo mb-7"
               />
               <p className="gr-text-11">
-                Whether its expansion or growth, selling product or services,
-                partner with us for strong online presence.
+                Partner with for all your Web Design, Web Development, Content
+                Writing and SEO needs
               </p>
-              <ul className="social-icons py-7 list-unstyled mb-7 mb-lg-0">
+              {/* <ul className="social-icons py-7 list-unstyled mb-7 mb-lg-0">
                 <li className="mr-2">
-                  <Link href="/">
-                    <a className={iconClassName}>
-                      <i className="icon icon-logo-twitter"></i>
-                    </a>
-                  </Link>
+                  <a
+                    href="/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={iconClassName}
+                  >
+                    <i className="icon icon-logo-twitter"></i>
+                  </a>
                 </li>
                 <li className="mr-2">
-                  <Link href="/">
-                    <a className={iconClassName}>
-                      <i className="icon icon-logo-facebook"></i>
-                    </a>
-                  </Link>
+                  <a
+                    href="/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={iconClassName}
+                  >
+                    <i className="icon icon-logo-facebook"></i>
+                  </a>
                 </li>
                 <li className="mr-2">
-                  <Link href="/">
-                    <a className={iconClassName}>
-                      <i className="icon icon-instant-camera-2"></i>
-                    </a>
-                  </Link>
+                  <a
+                    href="https://www.instagram.com/aronworks_official"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={iconClassName}
+                  >
+                    <i className="icon icon-instant-camera-2"></i>
+                  </a>
                 </li>
                 <li className="mr-2">
-                  <Link href="/">
-                    <a className={iconClassName}>
-                      <i className="icon icon-logo-linkedin"></i>
-                    </a>
-                  </Link>
+                  <a
+                    href="/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={iconClassName}
+                  >
+                    <i className="icon icon-logo-linkedin"></i>
+                  </a>
                 </li>
-              </ul>
+              </ul> */}
             </Col>
 
             <Col lg="8" md="8" className="offset-lg-1">
@@ -80,17 +92,17 @@ const Footer = () => {
                     <p className="footer-title gr-text-11 mb-7">Services</p>
                     <ul className="footer-list list-unstyled gr-text-9">
                       <li className="py-2">
-                        <Link href="/">
+                        <Link href="/web-development">
                           <a className={linkClassName}>Web Development</a>
                         </Link>
                       </li>
                       <li className="py-2">
-                        <Link href="/">
+                        <Link href="/content-writing">
                           <a className={linkClassName}>Content Writing</a>
                         </Link>
                       </li>
                       <li className="py-2">
-                        <Link href="/">
+                        <Link href="/seo-for-business">
                           <a className={linkClassName}>SEO for Business</a>
                         </Link>
                       </li>
@@ -102,7 +114,7 @@ const Footer = () => {
                     <p className="footer-title gr-text-11 mb-7">Legal</p>
                     <ul className="footer-list list-unstyled gr-text-9">
                       <li className="py-2">
-                        <Link href="/">
+                        <Link href="/privacy-policy">
                           <a className={linkClassName}>Privacy Policy</a>
                         </Link>
                       </li>
@@ -134,6 +146,15 @@ const Footer = () => {
                           href="tel:+917708521528"
                         >
                           +91 7708 521 528
+                        </a>
+                      </li>
+
+                      <li className="py-2">
+                        <a
+                          className={`gr-text-9 font-weight-bold hover-underline active ${contactClassName}`}
+                          href="tel:+919940509401"
+                        >
+                          +91 9940 509 401
                         </a>
                       </li>
                     </ul>

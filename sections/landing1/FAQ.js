@@ -16,8 +16,7 @@ const FAQ = () => {
                 Frequently Asked Questions
               </h2>
               <p className="gr-text-8 mb-0">
-                With lots of unique blocks, you can easily build a page without
-                coding. Build your next consultancy website within few minutes.
+                Just scroll down, May be we've already addressed your query.
               </p>
             </div>
           </Col>
@@ -38,16 +37,16 @@ const FAQ = () => {
                     onClick={() => setOpenItem(1)}
                     aria-expanded={openItem === 1}
                   >
-                    Can I use Albino for my clients?
+                    What is the time duration you take to design my website?
                   </button>
                 </div>
                 <Collapse in={openItem === 1}>
                   <div>
                     <div className="card-body gr-color-blackish-blue-opacity-7 pt-0 pl-9 pr-15 gr-text-9 pb-9">
-                      With lots of unique blocks, you can easily build a page
-                      without coding. Build your next landing page. Integer ut
-                      Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam
-                      sagittis interdum Melisandre.
+                      Websites vary from simple to complex. Complex sites take
+                      time because of the intricacies involved but if there are
+                      deadlines to meet, we consider it. By and large, it takes
+                      1 week to a month based on the requirement.
                     </div>
                   </div>
                 </Collapse>
@@ -64,14 +63,18 @@ const FAQ = () => {
                     onClick={() => setOpenItem(2)}
                     aria-expanded={openItem === 2}
                   >
-                    Does it work with WordPress?
+                    Is there any hidden charge with AronWorks?
                   </button>
                 </div>
                 <Collapse in={openItem === 2}>
                   <div>
                     <div className="card-body gr-color-blackish-blue-opacity-7 pt-0 pl-9 pr-15 gr-text-9 pb-9">
-                      With lots of unique blocks, you can easily build a page
-                      without coding. Build your next landing page.
+                      Definitely No, There is no hidden charge with us. We
+                      adhere to whatever price quoted during the initial
+                      agreement when the project was finalised.
+                      <p className="gr-text-9 mb-0 mt-5">
+                        With AronWorks “What you see is What you get”
+                      </p>
                     </div>
                   </div>
                 </Collapse>
@@ -88,14 +91,17 @@ const FAQ = () => {
                     onClick={() => setOpenItem(3)}
                     aria-expanded={openItem === 3}
                   >
-                    Do I get free updates?
+                    Do you provide only Web design or Web hosting is also
+                    included?
                   </button>
                 </div>
                 <Collapse in={openItem === 3}>
                   <div>
                     <div className="card-body gr-color-blackish-blue-opacity-7 pt-0 pl-9 pr-15 gr-text-9 pb-9">
-                      With lots of unique blocks, you can easily build a page
-                      without coding. Build your next landing page.
+                      We are a one-stop-shop for all web development services.
+                      We take care of everything like domain name registering,
+                      designing, building and maintaining your website. We also
+                      offer 1 year of free maintenance.
                     </div>
                   </div>
                 </Collapse>
@@ -112,14 +118,17 @@ const FAQ = () => {
                     onClick={() => setOpenItem(4)}
                     aria-expanded={openItem === 4}
                   >
-                    Organize your campaigns
+                    We are planning to revamp our Website. Do you offer a
+                    redesign?
                   </button>
                 </div>
                 <Collapse in={openItem === 4}>
                   <div>
                     <div className="card-body gr-color-blackish-blue-opacity-7 pt-0 pl-9 pr-15 gr-text-9 pb-9">
-                      With lots of unique blocks, you can easily build a page
-                      without coding. Build your next landing page.
+                      Yes. We certainly redesign any kind of existing sites by
+                      either retaining the original brand style or by completely
+                      giving a new makeover. Apart from redesigning we also do
+                      performance improvement for your website.
                     </div>
                   </div>
                 </Collapse>
@@ -136,14 +145,42 @@ const FAQ = () => {
                     onClick={() => setOpenItem(5)}
                     aria-expanded={openItem === 5}
                   >
-                    Will you provide support?
+                    Do I get to see my website while it's in-progress?
                   </button>
                 </div>
                 <Collapse in={openItem === 5}>
                   <div>
                     <div className="card-body gr-color-blackish-blue-opacity-7 pt-0 pl-9 pr-15 gr-text-9 pb-9">
-                      With lots of unique blocks, you can easily build a page
-                      without coding. Build your next landing page.
+                      Absolutely, You get to see it while work in progress as we
+                      look forward to your feedback to check the compatibility
+                      of our design with your style or to make any other
+                      necessary changes as deemed fit by you.
+                    </div>
+                  </div>
+                </Collapse>
+              </div>
+
+              <div className="border rounded-10 mb-3 bg-white overflow-hidden">
+                <div
+                  className="mb-0 py-8 pl-9 pr-7 border-bottom-0 bg-white"
+                  id="heading4-6"
+                >
+                  <button
+                    className="btn-reset gr-text-7 font-weight-bold text-left text-blackish-blue p-0 accordion-trigger arrow-icon w-100"
+                    type="button"
+                    aria-controls="collapse-6"
+                    onClick={() => setOpenItem(6)}
+                    aria-expanded={openItem === 6}
+                  >
+                    Does making changes to the site involve any additional cost?
+                  </button>
+                </div>
+                <Collapse in={openItem === 6}>
+                  <div>
+                    <div className="card-body gr-color-blackish-blue-opacity-7 pt-0 pl-9 pr-15 gr-text-9 pb-9">
+                      We try to be as accommodating as possible, keeping that in
+                      mind all minor changes and up to 2 revisions we don't
+                      charge you.
                     </div>
                   </div>
                 </Collapse>
@@ -154,7 +191,7 @@ const FAQ = () => {
             <p className="gr-text-9 gr-text-9 gr-text-color">
               Haven’t got your answer?{" "}
               <span onClick={openFreshChat} className="cursor-pointer btn-link">
-                Contact our support now
+                Contact our team now
               </span>
             </p>
           </div>

@@ -2,10 +2,23 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import PageWrapper from "../../components/PageWrapper";
 import Image from "next/image";
+import Head from "next/head";
 
 const TermsConditions = () => {
   return (
     <>
+      <Head>
+        <title>
+          5 reasons why small businesses need a website in 2021 - AronWorks
+        </title>
+
+        <meta
+          name="description"
+          content="Websites are more accessible and affordable, still for
+          some reason, more than 40% of small businesses have been
+          hesitant to go for one."
+        />
+      </Head>
       <PageWrapper
         headerConfig={{
           theme: "light",

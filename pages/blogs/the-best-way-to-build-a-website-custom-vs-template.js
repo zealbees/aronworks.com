@@ -2,10 +2,23 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import PageWrapper from "../../components/PageWrapper";
 import Image from "next/image";
+import Head from "next/head";
 
 const TermsConditions = () => {
   return (
     <>
+      <Head>
+        <title>
+          The best way to build a website: custom vs template. - AronWorks
+        </title>
+
+        <meta
+          name="description"
+          content="Before getting into custom or template websites, will try
+          to throw a little light on what is a custom built website
+          and template website."
+        />
+      </Head>
       <PageWrapper
         headerConfig={{
           theme: "light",
@@ -26,7 +39,7 @@ const TermsConditions = () => {
                     The best way to build a website: custom vs template.
                   </h2>
                   <p className="gr-text-11 mb-8">
-                    <span>17 Mar 2021</span>&nbsp;·&nbsp;<span>3 min read</span>
+                    <span>22 Mar 2021</span>&nbsp;·&nbsp;<span>3 min read</span>
                   </p>
                 </div>
               </Col>

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import PageWrapper from "../components/PageWrapper";
+import Head from "next/head";
+import { openFreshChat } from "../utils/freshChat";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -42,6 +44,13 @@ const Contact = () => {
   }
   return (
     <>
+      <Head>
+        <title>Contact Us - AronWorks</title>
+        <meta
+          name="description"
+          content="Feel free to get in touch with us at +91 7708 521 528, +91 9940 509 401 for consultation."
+        />
+      </Head>
       <PageWrapper
         headerConfig={{
           theme: "light",
@@ -60,8 +69,16 @@ const Contact = () => {
                 <div className="px-md-15 text-center">
                   <h2 className="title gr-text-2 mb-9">Contact us</h2>
                   <p className="gr-text-8 mb-13">
-                    Use the form to drop us an email or rech us in the number
-                    below, we are more than happy to help you.
+                    You've got Questions, We've got Answers.
+                    <br />
+                    <span
+                      onClick={openFreshChat}
+                      className="cursor-pointer btn-link"
+                    >
+                      {" "}
+                      Text us
+                    </span>
+                    , We are more than happy to help you.
                   </p>
                 </div>
               </Col>
@@ -81,9 +98,9 @@ const Contact = () => {
               >
                 <div className="single-contact-widget mb-13">
                   <h3 className="gr-text-6 mb-5">Call / WhatsApp us</h3>
-                  <p className="gr-text-7 mb-0">
+                  <p className="gr-text-7 d-flex align-items-center justify-content-start">
                     <a
-                      href="https://api.whatsapp.com/send?phone=917708521528&text=Hey"
+                      href="https://api.whatsapp.com/send?phone=917708521528"
                       target="_blank"
                       className="text-opacity-eerie-black"
                     >
@@ -100,10 +117,30 @@ const Contact = () => {
                       <path d="M395.636 232.727c-12.853 0-23.273 10.42-23.273 23.273v209.455H46.545V139.636H256c12.853 0 23.273-10.42 23.273-23.273S268.853 93.091 256 93.091H23.273C10.42 93.091 0 103.511 0 116.364v372.364C0 501.58 10.42 512 23.273 512h372.364c12.853 0 23.273-10.42 23.273-23.273V256c-.001-12.853-10.421-23.273-23.274-23.273z" />
                     </svg>
                   </p>
+
+                  <p className="gr-text-7 mb-0 d-flex align-items-center justify-content-start">
+                    <a
+                      href="https://api.whatsapp.com/send?phone=919940509401"
+                      target="_blank"
+                      className="text-opacity-eerie-black"
+                    >
+                      +91 9940 509 401
+                    </a>
+
+                    <svg
+                      viewBox="0 0 512 512"
+                      height="13"
+                      style={{ marginLeft: "8px" }}
+                      fill="rgba(34, 34, 34, 0.7)"
+                    >
+                      <path d="M488.727 0H302.545c-12.853 0-23.273 10.42-23.273 23.273s10.42 23.273 23.273 23.273h129.997L192.999 286.09c-9.089 9.089-9.089 23.823 0 32.912a23.195 23.195 0 0016.455 6.816 23.194 23.194 0 0016.457-6.817L465.455 79.458v129.997c0 12.853 10.42 23.273 23.273 23.273s23.273-10.42 23.273-23.273V23.273C512 10.42 501.58 0 488.727 0z" />
+                      <path d="M395.636 232.727c-12.853 0-23.273 10.42-23.273 23.273v209.455H46.545V139.636H256c12.853 0 23.273-10.42 23.273-23.273S268.853 93.091 256 93.091H23.273C10.42 93.091 0 103.511 0 116.364v372.364C0 501.58 10.42 512 23.273 512h372.364c12.853 0 23.273-10.42 23.273-23.273V256c-.001-12.853-10.421-23.273-23.274-23.273z" />
+                    </svg>
+                  </p>
                 </div>
                 <div className="single-contact-widget mb-13">
                   <h3 className="gr-text-6 mb-5">Email us</h3>
-                  <p className="gr-text-7 mb-0">
+                  <p className="gr-text-7 mb-0 d-flex align-items-center justify-content-start">
                     <a
                       href="mailto:hello@aronworks.com"
                       className="text-opacity-eerie-black"

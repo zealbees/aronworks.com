@@ -2,10 +2,23 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import PageWrapper from "../../components/PageWrapper";
 import Image from "next/image";
+import Head from "next/head";
 
 const TermsConditions = () => {
   return (
     <>
+      <Head>
+        <title>
+          7 reasons why you should hire a professional writer for your business
+          - AronWorks
+        </title>
+
+        <meta
+          name="description"
+          content="What is that fuss about professional writing? Can’t an
+          English teacher do the job?"
+        />
+      </Head>
       <PageWrapper
         headerConfig={{
           theme: "light",
@@ -27,7 +40,7 @@ const TermsConditions = () => {
                     business.
                   </h2>
                   <p className="gr-text-11 mb-8">
-                    <span>17 Mar 2021</span>&nbsp;·&nbsp;<span>3 min read</span>
+                    <span>22 Mar 2021</span>&nbsp;·&nbsp;<span>3 min read</span>
                   </p>
                 </div>
               </Col>

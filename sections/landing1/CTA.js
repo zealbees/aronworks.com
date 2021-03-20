@@ -9,7 +9,7 @@ const CTA = () => {
         <Row className="justify-content-center">
           <Col md="9" lg="7" xl="6">
             <div className="text-center dark-mode-texts">
-              <h2 className="gr-text-4 mb-7">Have a project in mind?</h2>
+              <h2 className="gr-text-4 mb-7">Let’s get started!</h2>
               <p className="gr-text-9 mb-11 px-xl-7 gr-text-color">
                 Connect with us to discuss your Ideas and Concept. We would be
                 happy to take it further!

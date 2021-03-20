@@ -1,18 +1,22 @@
 export const menuItems = [
-  {
-    name: "services",
-    label: "Services",
-    items: [
-      { name: "web-development", label: "Web Development" },
-      { name: "content-writing", label: "Content Writing" },
-      { name: "seo -for-business", label: "SEO for Business" },
-    ],
-  },
+  // {
+  //   name: "services",
+  //   label: "Services",
+  //   items: [
+  //     { name: "web-development", label: "Web Development" },
+  //     { name: "content-writing", label: "Content Writing" },
+  //     { name: "seo-for-business", label: "SEO for Business" },
+  //   ],
+  // },
 
-  {
-    name: "pricing",
-    label: "Pricing",
-  },
+  // {
+  //   name: "pricing",
+  //   label: "Pricing",
+  // },
+
+  { name: "web-development", label: "Web Development" },
+  { name: "content-writing", label: "Content Writing" },
+  { name: "seo-for-business", label: "SEO for Business" },
   {
     name: "contact",
     label: "Contact Us",

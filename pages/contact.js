@@ -1,16 +1,29 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import PageWrapper from "../components/PageWrapper";
 import Head from "next/head";
 import { openFreshChat } from "../utils/freshChat";
+import useFirstRender from "../utils/useFirstRender";
+
+const nameRegx = /^[A-Za-z_ ][A-Za-z0-9_ ]{2,29}$/;
+const emailRegx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+const mobileRegx = /^(\+\d{1,3}[- ]?)?\d{10}$/;
 
 const Contact = () => {
+  const firstRender = useFirstRender();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [message, setMessage] = useState("");
 
+  const [isNameValid, setIsNameValid] = useState(true);
+  const [isEmailValid, setIsEmailValid] = useState(true);
+  const [isMobileValid, setIsMobileValid] = useState(true);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
   function handleChange(event) {
+    setIsFormSubmitted(false);
     const eventName = event.target.name;
     const eventValue = event.target.value;
 
@@ -30,10 +43,88 @@ const Contact = () => {
     }
   }
 
+  useEffect(
+    function () {
+      if (!firstRender && !isFormSubmitted) {
+        const isNameValid = nameRegx.test(name);
+        setIsNameValid(isNameValid);
+      }
+    },
+    [name]
+  );
+
+  useEffect(
+    function () {
+      if (!firstRender && !isFormSubmitted) {
+        const isEmailValid = emailRegx.test(email);
+        setIsEmailValid(isEmailValid);
+      }
+    },
+    [email]
+  );
+
+  useEffect(
+    function () {
+      if (!firstRender && !isFormSubmitted) {
+        const isMobileValid = mobileRegx.test(mobile);
+        setIsMobileValid(isMobileValid);
+      }
+    },
+    [mobile]
+  );
+
   function handleSubmit(event) {
-    console.table({ name, email, mobile, message });
     event.preventDefault();
+    validateForm();
+
+    if (
+      name !== "" &&
+      email !== "" &&
+      mobile !== "" &&
+      isNameValid &&
+      isEmailValid &&
+      isMobileValid
+    ) {
+      submitForm();
+    }
+  }
+
+  function validateForm() {
+    const isMobileValid = mobileRegx.test(mobile);
+    setIsMobileValid(isMobileValid);
+
+    const isEmailValid = emailRegx.test(email);
+    setIsEmailValid(isEmailValid);
+
+    const isNameValid = nameRegx.test(name);
+    setIsNameValid(isNameValid);
+  }
+
+  async function submitForm() {
+    const data = {
+      name,
+      email,
+      mobile,
+      message,
+    };
+
+    const response = await fetch("/api/contact-us", {
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      mode: "cors", // no-cors, *cors, same-origin
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: "same-origin", // include, *same-origin, omit
+      headers: {
+        "Content-Type": "application/json",
+      },
+      referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+      body: JSON.stringify(data), // body data type must match "Content-Type" header
+    });
+
+    setIsFormSubmitted(true);
+
     clearForm();
+
+    return response.json(); // parses JSON response into native JavaScript objects
   }
 
   function clearForm() {
@@ -42,6 +133,7 @@ const Contact = () => {
     setMobile("");
     setMessage("");
   }
+
   return (
     <>
       <Head>
@@ -195,6 +287,12 @@ const Contact = () => {
                         required
                         onChange={handleChange}
                       />
+
+                      {!isNameValid && (
+                        <p className="gr-text-12 text-primary mt-2">
+                          Enter a valid Name
+                        </p>
+                      )}
                     </div>
                     <div className="form-group">
                       <label
@@ -213,13 +311,18 @@ const Contact = () => {
                         required
                         onChange={handleChange}
                       />
+                      {!isEmailValid && (
+                        <p className="gr-text-12 text-primary mt-2">
+                          Enter a valid Email
+                        </p>
+                      )}
                     </div>
                     <div className="form-group">
                       <label
                         htmlFor="name"
                         className="gr-text-11 font-weight-bold text-blackish-blue"
                       >
-                        mobile
+                        Mobile
                       </label>
                       <input
                         className="form-control px-7 gr-text-11 border"
@@ -231,6 +334,11 @@ const Contact = () => {
                         required
                         onChange={handleChange}
                       />
+                      {!isMobileValid && (
+                        <p className="gr-text-12 text-primary mt-2">
+                          Enter a valid Mobile
+                        </p>
+                      )}
                     </div>
                     <div className="form-group">
                       <label
@@ -245,11 +353,16 @@ const Contact = () => {
                         id="message"
                         name="message"
                         placeholder="Type your message"
-                        required
                         rows="3"
                         onChange={handleChange}
                       ></textarea>
                     </div>
+
+                    {isFormSubmitted && (
+                      <p className="gr-text-10 text-green mt-2">
+                        Thank you for contacting us!
+                      </p>
+                    )}
 
                     <div className="button-block mb-2">
                       <Button

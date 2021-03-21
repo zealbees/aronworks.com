@@ -112,7 +112,7 @@ const IndexPage = () => {
                   >
                     <Image
                       src="/assets/images/web-content-writing.svg"
-                      alt="AronWorks"
+                      alt="Web Content Writing"
                       width={500}
                       height={490}
                     />
@@ -151,7 +151,7 @@ const IndexPage = () => {
                   >
                     <Image
                       src="/assets/images/blog-content-writing.svg"
-                      alt="AronWorks"
+                      alt="Blog Content Writing"
                       width={500}
                       height={490}
                     />
@@ -188,7 +188,7 @@ const IndexPage = () => {
                   >
                     <Image
                       src="/assets/images/social-media-content-writing.svg"
-                      alt="AronWorks"
+                      alt="Social Media Content Writing"
                       width={500}
                       height={375}
                     />

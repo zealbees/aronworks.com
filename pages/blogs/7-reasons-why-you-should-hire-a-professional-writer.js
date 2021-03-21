@@ -55,10 +55,10 @@ const TermsConditions = () => {
                 <Image
                   layout="responsive"
                   className="w-100 rounded-10"
-                  src="/assets/images/temp.jpeg"
+                  src="/assets/images/content-writing.jpg"
                   alt=""
-                  width={210}
-                  height={140}
+                  width={366.6}
+                  height={267}
                 />
               </Col>
             </Row>

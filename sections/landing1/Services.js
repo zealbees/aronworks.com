@@ -35,7 +35,7 @@ const Services = () => {
                   <Image
                     className="rounded-10 w-100"
                     src="/assets/images/web-development.svg"
-                    alt=""
+                    alt="Web Development"
                     width={200}
                     height={200}
                   />
@@ -65,7 +65,7 @@ const Services = () => {
                   <Image
                     className="w-100"
                     src="/assets/images/content-writing.svg"
-                    alt=""
+                    alt="Content Writing"
                     width={200}
                     height={200}
                   />
@@ -96,7 +96,7 @@ const Services = () => {
                   <Image
                     className="rounded-10 w-100"
                     src="/assets/images/seo.svg"
-                    alt=""
+                    alt="Search Engine Optimization"
                     width={200}
                     height={200}
                   />

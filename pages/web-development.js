@@ -117,7 +117,7 @@ const IndexPage = () => {
                   >
                     <Image
                       src="/assets/images/web-development1.svg"
-                      alt="AronWorks"
+                      alt="Web Development"
                       width={600}
                       height={400}
                     />
@@ -154,7 +154,7 @@ const IndexPage = () => {
                   >
                     <Image
                       src="/assets/images/front-end-architecture.svg"
-                      alt="AronWorks"
+                      alt="Front-end Architecture"
                       width={500}
                       height={330}
                     />
@@ -186,7 +186,7 @@ const IndexPage = () => {
                   >
                     <Image
                       src="/assets/images/spa.svg"
-                      alt="AronWorks"
+                      alt="Single-page Application"
                       width={500}
                       height={300}
                     />
@@ -228,7 +228,7 @@ const IndexPage = () => {
                   >
                     <Image
                       src="/assets/images/amp.svg"
-                      alt="AronWorks"
+                      alt="Accelerated Mobile Pages"
                       width={500}
                       height={470}
                     />
@@ -262,7 +262,7 @@ const IndexPage = () => {
                   >
                     <Image
                       src="/assets/images/pwa.svg"
-                      alt="AronWorks"
+                      alt="Progressive Web Apps"
                       width={500}
                       height={490}
                     />
@@ -270,7 +270,7 @@ const IndexPage = () => {
                 </Col>
                 <Col sm="10" lg="5">
                   <div className="content-text pt-11 pt-lg-0 pl-xl-7">
-                    <h2 className="gr-text-4 mb-7">PWA App Development</h2>
+                    <h2 className="gr-text-4 mb-7">PWA Development</h2>
                     <p className="gr-text-8 mb-0">
                       One of the most talked-about technology in recent times is
                       Progressive web apps (PWA). It is the best from both the

@@ -28,7 +28,7 @@ const Content = () => {
                   layout="responsive"
                   className="w-100 rounded-8"
                   src="/assets/images/why-us.svg"
-                  alt=""
+                  alt="Why AronWorks"
                   width={500}
                   height={500}
                 />

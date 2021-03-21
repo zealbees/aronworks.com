@@ -19,7 +19,7 @@ const Hero = () => {
                 <Image
                   className="w-100"
                   src="/assets/images/hero.svg"
-                  alt=""
+                  alt="AronWorks Office"
                   width={540}
                   height={540}
                 />

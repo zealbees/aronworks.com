@@ -34,7 +34,7 @@ const News = () => (
                     layout="responsive"
                     className="w-100 rounded-top-10"
                     src="/assets/images/news-card-img1.jpg"
-                    alt=""
+                    alt="The best way to build a website: custom vs template"
                     width={350}
                     height={301}
                   />
@@ -69,7 +69,7 @@ const News = () => (
                     layout="responsive"
                     className="w-100 rounded-top-10"
                     src="/assets/images/news-card-img2.jpg"
-                    alt=""
+                    alt="5 Reasons why small business needs website in 2021"
                     width={350}
                     height={301}
                   />
@@ -105,7 +105,7 @@ const News = () => (
                     layout="responsive"
                     className="w-100 rounded-top-10"
                     src="/assets/images/news-card-img3.jpg"
-                    alt=""
+                    alt="7 reasons why you should hire a professional writer"
                     width={350}
                     height={301}
                   />

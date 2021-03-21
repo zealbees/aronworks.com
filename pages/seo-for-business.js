@@ -69,7 +69,7 @@ const IndexPage = () => {
                   >
                     <Image
                       src="/assets/images/seo1.svg"
-                      alt="AronWorks"
+                      alt="Search Engine Optimisation"
                       width={500}
                       height={350}
                     />
@@ -110,7 +110,7 @@ const IndexPage = () => {
                   >
                     <Image
                       src="/assets/images/why-invest-in-seo.svg"
-                      alt="AronWorks"
+                      alt="Why Invest in SEO"
                       width={500}
                       height={342}
                     />
@@ -148,7 +148,7 @@ const IndexPage = () => {
                   >
                     <Image
                       src="/assets/images/why-choose-us-for-seo.svg"
-                      alt="AronWorks"
+                      alt="Choose Us for SEO"
                       width={500}
                       height={375}
                     />

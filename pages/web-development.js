@@ -137,10 +137,10 @@ const IndexPage = () => {
                   <div className="content-text pt-11 pt-lg-0 pl-xl-7">
                     <h2 className="gr-text-4 mb-7">HTML / CSS Development</h2>
                     <p className="gr-text-8 mb-0">
-                      We carry out front-end development using HTML5 to have an
-                      incredible web presence that reflects your business and
-                      gives you a platform to compete with more established
-                      competitors.
+                      When Web Development is concerned HTML5 and CSS3 are
+                      indispensable. This enhances the user experiences that
+                      reflect in your business and creates a platform to compete
+                      with more established competitors..
                     </p>
                   </div>
                 </Col>
@@ -170,8 +170,8 @@ const IndexPage = () => {
                     <h2 className="gr-text-4 mb-7">Front-end Architecture</h2>
                     <p className="gr-text-8 mb-0">
                       We are strong in front- end architecture which creates
-                      robust and expansible web applications by following all
-                      modern standards.
+                      expansible and scalable web applications resilient to
+                      changing technologies.
                     </p>
                   </div>
                 </Col>
@@ -198,17 +198,16 @@ const IndexPage = () => {
                 </Col>
                 <Col sm="10" lg="5">
                   <div className="content-text pt-11 pt-lg-0 pl-xl-7">
-                    <h2 className="gr-text-4 mb-7">SPA Application</h2>
+                    <h2 className="gr-text-4 mb-7">Single-page Application</h2>
                     <p className="gr-text-8">
-                      Web Apps are more convenient to use, they are easy to
-                      update, and they are not bound to one device. Though users
-                      are moving from browser-based web applications into mobile
-                      ones, the demand for complex and refined apps is still
-                      growing.
+                      Single-page Application (SPA) is more convenient and easy
+                      to use as they work inside the browser. We can bring in
+                      much improved user experience and this in turn will always
+                      have a positive impact on the customer.
                     </p>
 
                     <p className="gr-text-8 mb-0">
-                      We create Single Page Applications with modern JavaScript
+                      We create Single-page Applications with modern JavaScript
                       frameworks alongside SEO.
                     </p>
                   </div>
@@ -236,12 +235,13 @@ const IndexPage = () => {
                 </Col>
                 <Col sm="10" lg="5" className="order-lg-1">
                   <div className="content-text">
-                    <h2 className="gr-text-4 mb-7">AMP App Development</h2>
+                    <h2 className="gr-text-4 mb-7">AMP Development</h2>
                     <p className="gr-text-8 mb-0">
-                      We use Accelerated Mobile Pages(AMP) which has a huge
-                      impact on mobile search engine rankings. pages that are
-                      AMP-optimized are faster and they unquestionably convert
-                      more mobile page visitors into customers.
+                      We use Accelerated Mobile Pages (AMP) which has a huge
+                      impact on mobile search engine rankings. Across all
+                      platforms, they work incredibly faster, and they
+                      unquestionably convert more mobile page visitors into
+                      customers.
                     </p>
                   </div>
                 </Col>
@@ -270,10 +270,10 @@ const IndexPage = () => {
                   <div className="content-text pt-11 pt-lg-0 pl-xl-7">
                     <h2 className="gr-text-4 mb-7">PWA App Development</h2>
                     <p className="gr-text-8 mb-0">
-                      Progressive web apps (PWA) is one of the most talked-about
-                      technology shifts in the web and has gained unparalleled
-                      momentum among the practitioners in the IT world. We
-                      involve PWA as it's reliable, fast and engaging.
+                      One of the most talked-about technology in recent times is
+                      Progressive web apps (PWA). It is the best from both the
+                      App and the Web worlds. We involve PWA as it's reliable,
+                      installable, fast and engaging.
                     </p>
                   </div>
                 </Col>

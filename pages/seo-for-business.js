@@ -3,6 +3,7 @@ import PageWrapper from "../components/PageWrapper";
 import CTA from "../sections/landing1/CTA";
 import { Container, Row, Col } from "react-bootstrap";
 import Head from "next/head";
+import Image from "next/image";
 
 const IndexPage = () => {
   return (
@@ -66,10 +67,11 @@ const IndexPage = () => {
                     data-aos-duration="1000"
                     data-aos-delay="500"
                   >
-                    <img
-                      src="/assets/images/l1-content1-img.png"
-                      alt=""
-                      className="gr-image-box-shadow mw-100"
+                    <Image
+                      src="/assets/images/seo1.svg"
+                      alt="AronWorks"
+                      width={500}
+                      height={350}
                     />
                   </div>
                 </Col>
@@ -106,10 +108,11 @@ const IndexPage = () => {
                     data-aos-duration="1000"
                     data-aos-delay="500"
                   >
-                    <img
-                      src="/assets/images/invest-in-seo.jpeg"
-                      alt=""
-                      className="gr-image-box-shadow mw-100"
+                    <Image
+                      src="/assets/images/why-invest-in-seo.svg"
+                      alt="AronWorks"
+                      width={500}
+                      height={342}
                     />
                   </div>
                 </Col>
@@ -143,11 +146,12 @@ const IndexPage = () => {
                     data-aos-duration="1000"
                     data-aos-delay="500"
                   >
-                    {/* <img
-                  src={imgHero}
-                  alt=""
-                  className="gr-image-box-shadow mw-100"
-                /> */}
+                    <Image
+                      src="/assets/images/why-choose-us-for-seo.svg"
+                      alt="AronWorks"
+                      width={500}
+                      height={375}
+                    />
                   </div>
                 </Col>
                 <Col sm="10" lg="5">

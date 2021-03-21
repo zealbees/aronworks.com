@@ -61,11 +61,11 @@ const IndexPage = () => {
           <div className="content-section pt-lg-25 pt-14 pb-10 pb-lg-15">
             <Container>
               <Row>
-                <Col md="6">
+                <Col md="12">
                   <div className="section-title mb-13 mb-lg-21">
-                    <h2 className="title gr-text-3 mb-7">
+                    {/* <h2 className="title gr-text-3 mb-7">
                       Web Development is in our Core!
-                    </h2>
+                    </h2> */}
                     <p className="gr-text-8">
                       If you’re searching for affordable high-quality content
                       that captivates and engages your readers, then you are on
@@ -96,17 +96,6 @@ const IndexPage = () => {
                     </p>
                   </div>
                 </Col>
-                <Col md="6" data-aos="fade-up" data-aos-duration="1000">
-                  <div className="image-right mt-9 mt-lg-4 pl-xl-6">
-                    <Image
-                      src="/assets/images/content1-img2.jpg"
-                      alt="AronWorks"
-                      className="w-100 rounded-10"
-                      width={520}
-                      height={670}
-                    />
-                  </div>
-                </Col>
               </Row>
             </Container>
           </div>
@@ -121,11 +110,12 @@ const IndexPage = () => {
                     data-aos-duration="1000"
                     data-aos-delay="500"
                   >
-                    {/* <img
-                  src={imgHero}
-                  alt=""
-                  className="gr-image-box-shadow mw-100"
-                /> */}
+                    <Image
+                      src="/assets/images/web-content-writing.svg"
+                      alt="AronWorks"
+                      width={500}
+                      height={490}
+                    />
                   </div>
                 </Col>
                 <Col sm="10" lg="5">
@@ -159,7 +149,12 @@ const IndexPage = () => {
                     data-aos-duration="1000"
                     data-aos-delay="500"
                   >
-                    {/* <img className="main-img w-100" src={imgHero} alt="" /> */}
+                    <Image
+                      src="/assets/images/blog-content-writing.svg"
+                      alt="AronWorks"
+                      width={500}
+                      height={490}
+                    />
                   </div>
                 </Col>
                 <Col sm="10" lg="5" className="order-lg-1">
@@ -191,11 +186,12 @@ const IndexPage = () => {
                     data-aos-duration="1000"
                     data-aos-delay="500"
                   >
-                    {/* <img
-                  src={imgHero}
-                  alt=""
-                  className="gr-image-box-shadow mw-100"
-                /> */}
+                    <Image
+                      src="/assets/images/social-media-content-writing.svg"
+                      alt="AronWorks"
+                      width={500}
+                      height={375}
+                    />
                   </div>
                 </Col>
                 <Col sm="10" lg="5">
